@@ -1,0 +1,1 @@
+madie-models is for including the Typescript models that can be shared between projects.
