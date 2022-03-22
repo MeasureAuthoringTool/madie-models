@@ -1,4 +1,6 @@
 import { Model } from "./Model";
+import { PopulationType } from "./MeasurePopulation";
+
 
 export interface MeasureMetadata {
   steward?: string;
@@ -7,7 +9,11 @@ export interface MeasureMetadata {
   disclaimer?: string;
 }
 
-
+export interface Group {
+  id: string;
+  scoring?: string;
+  population?: PopulationType;
+}
 
 export default interface Measure {
   id: string;
