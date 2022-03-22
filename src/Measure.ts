@@ -1,5 +1,7 @@
 import { Model } from "./Model";
 import { PopulationType } from "./MeasurePopulation";
+import { MeasureScoring } from "./MeasureScoring";
+
 
 
 export interface MeasureMetadata {
@@ -24,6 +26,7 @@ export default interface Measure {
   state: string;
   measureName: string;
   cqlLibraryName: string;
+  measureScoring: MeasureScoring | "";
   cql: string;
   createdAt: string;
   createdBy: string;
@@ -31,4 +34,5 @@ export default interface Measure {
   lastModifiedBy: string;
   model: Model | "";
   measureMetaData?: MeasureMetadata;
+  groups?: Array<Group>;
 }
