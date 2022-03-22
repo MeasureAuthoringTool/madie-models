@@ -1,5 +1,6 @@
-const group = require('../MeasurePopulation');
+import group = require('../MeasurePopulation');  
 
 test('Verifies that MeasurePopulation has the correct attributes', () => {
-  expect(group.INITIAL_POPULATION === 'initialPopulation');
+  
+  expect(group.MeasurePopulation.INITIAL_POPULATION === 'initialPopulation');
 });

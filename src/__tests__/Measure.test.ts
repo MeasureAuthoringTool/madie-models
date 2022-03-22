@@ -1,5 +1,4 @@
 import Measure from '../Measure';
-import { MeasurePopulation } from "../MeasurePopulation";
 import { MeasureScoring } from "../MeasureScoring";
 import { Model } from "../Model";
 
