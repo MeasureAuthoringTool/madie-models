@@ -5,17 +5,19 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint src --ext ts",
-    "coverage": "echo \"Error: no test specified\" && exit 0"
+    "coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "types": "index.d.ts",
   "devDependencies": {
+    "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.16.0",
     "commonjs": "^0.0.1",
     "eslint": "^8.11.0",
+    "jest": "^27.5.1",
     "typescript": "^4.6.2"
   }
 }

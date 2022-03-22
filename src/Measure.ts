@@ -1,4 +1,4 @@
-
+import { Model } from "./Model";
 
 export interface MeasureMetadata {
   steward?: string;
@@ -23,5 +23,6 @@ export default interface Measure {
   createdBy: string;
   lastModifiedAt: string;
   lastModifiedBy: string;
+  model: Model | "";
   measureMetaData?: MeasureMetadata;
 }
