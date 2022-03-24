@@ -4,16 +4,8 @@ on:
     branches:
       - main
 jobs:
- - name: Rollback Release
-        if: failure() && steps.create_release.outputs.id != ''
-        uses: author/action-rollback@stable
-        with:
-          # Using a known release ID
-          id: ${{ steps.create_release.id }}
-          # Using a tag name
-          tag: ${{ steps.autotagger.outputs.tagname }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+
   npm-publish:
     name: npm-publish
     runs-on: ubuntu-latest
@@ -63,3 +55,15 @@ jobs:
         env: # More info about the environment variables in the README
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this as is, it's automatically generated
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Rollback Release
+        if: failure() && steps.create_release.outputs.id != ''
+        uses: author/action-rollback@stable
+        with:
+          # Using a known release ID
+          id: ${{ steps.create_release.id }}
+          # Using a tag name
+          tag: ${{ steps.autotagger.outputs.tagname }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       
