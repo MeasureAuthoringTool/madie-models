@@ -19,7 +19,7 @@ export interface Group {
   groupDescription?: string;
 }
 
-export default interface Measure {
+export interface Measure {
   id: string;
   active: boolean;
   measureHumanReadableId: string;
