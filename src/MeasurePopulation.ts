@@ -13,3 +13,21 @@ export enum MeasurePopulation {
 export type PopulationType = {
   [key in MeasurePopulation]?: string;
 };
+
+const PopulationCodeMap = {
+  initialPopulation: "IPP",
+  numerator: "NUMER",
+  numeratorExclusion: "NUMEX",
+  denominator: "DENOM",
+  denominatorExclusion: "DENEX",
+  denominatorException: "DENEXCEP",
+  measurePopulation: "MSRPOPL",
+  measurePopulationExclusion: "MSRPOPLEX",
+  measureObservation: "OBSERV",
+};
+
+export function getPopulationCode(
+  measurePopulation: MeasurePopulation
+): string {
+  return PopulationCodeMap[measurePopulation];
+}

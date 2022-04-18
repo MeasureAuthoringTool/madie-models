@@ -5,7 +5,8 @@ import { Model } from "../Model";
 
 test('Verifies that Measure has the correct attributes', () => {
   const measure:Measure = {
-    id:"test", 
+    id:"test",
+    active: true,
     measureHumanReadableId:"testReadable", 
     measureSetId:"1", 
     version:1, 
@@ -20,7 +21,10 @@ test('Verifies that Measure has the correct attributes', () => {
     lastModifiedAt:"",
     lastModifiedBy:"",
     model:Model.QICORE,
-    measureMetaData: {}
+    measureMetaData: {},
+    measurementPeriodEnd: new Date('01/01/2022'),
+    measurementPeriodStart: new Date('12/31/2022'),
   };
-  expect(measure.id==="test");
+  
+  expect(measure.id).toEqual("test");
 });
