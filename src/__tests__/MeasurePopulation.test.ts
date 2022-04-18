@@ -1,4 +1,4 @@
-import {getPopulationCode, MeasurePopulation} from '../MeasurePopulation';
+import { getPopulationCode, MeasurePopulation } from '../MeasurePopulation';
 
 describe("MeasureScoring Model", () => {
   it('Verifies that MeasurePopulation has the correct attributes', () => {
