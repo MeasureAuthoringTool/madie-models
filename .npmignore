@@ -1,7 +1,0 @@
-.DS_Store
-.github
-.gitignore
-.npmignore
-.npmrc
-npm-debug.log
-src/__test__
