@@ -15,7 +15,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "devDependencies": {
     "@types/jest": "^27.4.1",
