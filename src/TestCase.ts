@@ -1,6 +1,6 @@
 import { MeasurePopulation } from "./MeasurePopulation";
 
-export default interface TestCase {
+export interface TestCase {
   id: string;
   title: string;
   description: string;
