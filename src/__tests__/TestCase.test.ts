@@ -1,4 +1,4 @@
-import TestCase, { HapiOperationOutcome } from "../TestCase";
+import{ TestCase, HapiOperationOutcome } from "../TestCase";
 
 describe("TestCase Model", () => {
   it("should be able to create test case and populate fields", () => {
