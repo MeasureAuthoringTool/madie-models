@@ -16,6 +16,7 @@ test('Verifies that Measure has the correct attributes', () => {
     cqlLibraryName:"TestMeasureLibrary",
     measureScoring:MeasureScoring.COHORT,
     cql:"random string of cql code",
+    cqlErrors:true,
     createdAt:"",
     createdBy:"",
     lastModifiedAt:"",
@@ -27,4 +28,5 @@ test('Verifies that Measure has the correct attributes', () => {
   };
   
   expect(measure.id).toEqual("test");
+  expect(measure.cqlErrors).toBeTruthy();
 });
