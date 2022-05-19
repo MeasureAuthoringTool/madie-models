@@ -30,6 +30,7 @@ export interface Measure {
   measureName: string;
   cqlLibraryName: string;
   measureScoring: MeasureScoring | "";
+  cqlErrors?: boolean;
   cql: string;
   createdAt: string;
   createdBy: string;
