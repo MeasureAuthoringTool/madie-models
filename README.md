@@ -1,4 +1,5 @@
 # MADiE Typescript Models
+
 madie-models is for including the Typescript models that can be shared between projects.
 
 - npm install
@@ -15,6 +16,6 @@ To enable local development:
 - npm run build
 
 In the package.json, for the app you are integrating with, replace
-```"@madie/madie-models": "^0.0.5",```
-with 
-```"@madie/madie-models": "../madie-models/dist",```
+`"@madie/madie-models": "^0.0.5",`
+with
+`"@madie/madie-models": "../madie-models/dist",`

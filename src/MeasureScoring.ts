@@ -8,7 +8,5 @@ export enum MeasureScoring {
 export type MeasureScoringKeys = keyof typeof MeasureScoring;
 
 export const MEASURE_SCORING_KEYS = new Map(
-  Object.entries(MeasureScoring).map(
-    ([k, v]) => [v, k as MeasureScoringKeys]
-  )
+  Object.entries(MeasureScoring).map(([k, v]) => [v, k as MeasureScoringKeys])
 );
