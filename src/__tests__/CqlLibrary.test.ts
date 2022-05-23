@@ -1,7 +1,7 @@
 import { CqlLibrary } from "../CqlLibrary";
 import { Model } from "../Model";
 
-test("Verifies that Measure has the correct attributes", () => {
+test("Verifies that Cql Library has the correct attributes", () => {
   const cqlLibrary: CqlLibrary = {
     id: "test",
     cqlLibraryName: "TestingCqlLibrary",
