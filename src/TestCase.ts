@@ -19,10 +19,21 @@ export interface TestCase {
 export interface GroupPopulation {
   groupId: string;
   scoring: string;
-  populationValues: PopulationValue[];
+  populationValues: PopulationExpectedValue[];
 }
 
-export interface PopulationValue {
+export interface PopulationExpectedValue {
+  name: MeasurePopulation;
+  expected: boolean;
+}
+
+export interface DisplayGroupPopulation {
+  groupId: string;
+  scoring: string;
+  populationValues: DisplayPopulationValue[];
+}
+
+export interface DisplayPopulationValue {
   name: MeasurePopulation;
   expected: boolean;
   actual: boolean;
