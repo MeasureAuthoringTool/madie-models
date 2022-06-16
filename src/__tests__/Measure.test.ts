@@ -1,5 +1,4 @@
 import { Measure } from "../Measure";
-import { MeasureScoring } from "../MeasureScoring";
 import { Model } from "../Model";
 import {TestCase} from "../TestCase";
 
@@ -19,7 +18,6 @@ test("Verifies that Measure has the correct attributes", () => {
     state: "draft",
     measureName: "TestMeasure",
     cqlLibraryName: "TestMeasureLibrary",
-    measureScoring: MeasureScoring.COHORT,
     cql: "random string of cql code",
     cqlErrors: true,
     createdAt: "",
