@@ -1,5 +1,4 @@
 import { Model } from "./Model";
-import { MeasureScoring } from "./MeasureScoring";
 import { PopulationType } from "./MeasurePopulation";
 import {TestCase} from "./TestCase";
 
@@ -30,7 +29,6 @@ export interface Measure {
   state: string;
   measureName: string;
   cqlLibraryName: string;
-  measureScoring: MeasureScoring | "";
   cqlErrors?: boolean;
   cql: string;
   createdAt: string;
