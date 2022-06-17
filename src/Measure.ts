@@ -1,6 +1,7 @@
 import { Model } from "./Model";
 import { MeasureScoring } from "./MeasureScoring";
 import { PopulationType } from "./MeasurePopulation";
+import {TestCase} from "./TestCase";
 
 export interface MeasureMetadata {
   steward?: string;
@@ -42,4 +43,5 @@ export interface Measure {
   measurementPeriodEnd: Date;
   groups?: Array<Group>;
   elmJson?: string;
+  testCases?: Array<TestCase>
 }
