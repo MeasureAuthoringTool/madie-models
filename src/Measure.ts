@@ -17,6 +17,8 @@ export interface Group {
   scoring?: string;
   population?: PopulationType;
   groupDescription?: string;
+  rateAggregation?:string;
+  improvementNotation?:string;
 }
 
 export interface Measure {
