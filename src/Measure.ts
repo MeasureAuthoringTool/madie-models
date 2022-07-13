@@ -19,6 +19,7 @@ export interface Group {
   groupDescription?: string;
   rateAggregation?:string;
   improvementNotation?:string;
+  scoringUnit?:string;
 }
 
 export interface Measure {
