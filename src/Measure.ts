@@ -20,6 +20,7 @@ export interface Group {
   rateAggregation?:string;
   improvementNotation?:string;
   scoringUnit?:string;
+  measureGroupTypes?: string[];
 }
 
 export interface Measure {
