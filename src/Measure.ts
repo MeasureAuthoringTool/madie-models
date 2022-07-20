@@ -1,6 +1,7 @@
 import { Model } from "./Model";
 import { PopulationType } from "./MeasurePopulation";
-import {TestCase} from "./TestCase";
+import { TestCase } from "./TestCase";
+import { MeasureGroupTypes } from "./MeasureGroupTypes";
 
 export interface MeasureMetadata {
   steward?: string;
@@ -19,6 +20,8 @@ export interface Group {
   groupDescription?: string;
   rateAggregation?:string;
   improvementNotation?:string;
+  scoringUnit?:string;
+  measureGroupTypes: MeasureGroupTypes[];
 }
 
 export interface Measure {
