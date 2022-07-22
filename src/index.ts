@@ -1,5 +1,5 @@
 export * from "./Measure";
-export * from "./MeasurePopulation";
+export * from "./Population";
 export * from "./MeasureScoring";
 export * from "./Model";
 export * from "./TestCase";

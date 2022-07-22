@@ -1,4 +1,4 @@
-import { MeasurePopulation } from "./MeasurePopulation";
+import { PopulationType } from "./Population";
 
 export interface TestCase {
   id: string;
@@ -23,7 +23,7 @@ export interface GroupPopulation {
 }
 
 export interface PopulationExpectedValue {
-  name: MeasurePopulation;
+  name: PopulationType;
   expected: boolean;
 }
 
@@ -34,7 +34,7 @@ export interface DisplayGroupPopulation {
 }
 
 export interface DisplayPopulationValue {
-  name: MeasurePopulation;
+  name: PopulationType;
   expected: boolean;
   actual: boolean;
 }
