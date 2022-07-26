@@ -26,7 +26,7 @@ export interface Group {
   improvementNotation?:string;
   scoringUnit?:string;
   measureGroupTypes?: string[];
-  stratifications?:Array<Stratification>
+  stratifications?:Stratification[]
 }
 
 export interface Measure {
