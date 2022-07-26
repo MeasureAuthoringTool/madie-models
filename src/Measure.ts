@@ -18,10 +18,19 @@ export interface Group {
   scoring?: string;
   population?: PopulationType;
   groupDescription?: string;
-  rateAggregation?:string;
-  improvementNotation?:string;
-  scoringUnit?:string;
+  rateAggregation?: string;
+  improvementNotation?: string;
+  scoringUnit?: ScoringUnit;
   measureGroupTypes: MeasureGroupTypes[];
+}
+
+export interface ScoringUnit {
+  label: string;
+  value: {
+    code: string;
+    name: string;
+    guidance: string;
+  };
 }
 
 export interface Measure {
@@ -46,5 +55,5 @@ export interface Measure {
   measurementPeriodEnd: Date;
   groups?: Array<Group>;
   elmJson?: string;
-  testCases?: Array<TestCase>
+  testCases?: Array<TestCase>;
 }
