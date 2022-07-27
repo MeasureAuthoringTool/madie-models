@@ -12,7 +12,12 @@ export interface MeasureMetadata {
   author?: string;
   guidance?: string;
 }
-
+export interface Stratification {
+  id:string;
+  description?:string;
+  cqlDefinition?:string;
+  association?:string;
+}
 export interface Group {
   id: string;
   scoring?: string;
@@ -21,6 +26,7 @@ export interface Group {
   rateAggregation?:string;
   improvementNotation?:string;
   scoringUnit?:string;
+  stratifications?:Stratification[]
   measureGroupTypes: MeasureGroupTypes[];
 }
 
