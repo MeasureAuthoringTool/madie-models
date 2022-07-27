@@ -1,5 +1,5 @@
 import { Model } from "./Model";
-import { PopulationType } from "./MeasurePopulation";
+import { Population } from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 
@@ -12,15 +12,21 @@ export interface MeasureMetadata {
   author?: string;
   guidance?: string;
 }
-
+export interface Stratification {
+  id:string;
+  description?:string;
+  cqlDefinition?:string;
+  association?:string;
+}
 export interface Group {
   id: string;
   scoring?: string;
-  population?: PopulationType;
+  populations?: Population[];
   groupDescription?: string;
   rateAggregation?:string;
   improvementNotation?:string;
   scoringUnit?:string;
+  stratifications?:Stratification[]
   measureGroupTypes: MeasureGroupTypes[];
 }
 
