@@ -29,7 +29,7 @@ export function getPopulationCode(
 }
 
 export interface Population {
-  id: string;
+  id?: string;
   name: PopulationType;
-  definition: string;
+  definition?: string;
 }
