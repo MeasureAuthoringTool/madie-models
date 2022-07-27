@@ -1,5 +1,5 @@
 import { Model } from "./Model";
-import {Population} from "./Population";
+import { Population } from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 
