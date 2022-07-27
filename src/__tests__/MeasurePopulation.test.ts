@@ -1,32 +1,32 @@
-import { getPopulationCode, MeasurePopulation } from "../MeasurePopulation";
+import { getPopulationCode, PopulationType } from "../Population";
 
 describe("MeasureScoring Model", () => {
   it("Verifies that MeasurePopulation has the correct attributes", () => {
-    expect(MeasurePopulation.INITIAL_POPULATION).toEqual("initialPopulation");
+    expect(PopulationType.INITIAL_POPULATION).toEqual("initialPopulation");
   });
 
-  it("returns population code for getPopulationCode(MeasurePopulation)", () => {
-    expect(getPopulationCode(MeasurePopulation.INITIAL_POPULATION)).toEqual(
+  it("returns population code for getPopulationCode(PopulationType)", () => {
+    expect(getPopulationCode(PopulationType.INITIAL_POPULATION)).toEqual(
       "IPP"
     );
-    expect(getPopulationCode(MeasurePopulation.NUMERATOR)).toEqual("NUMER");
-    expect(getPopulationCode(MeasurePopulation.NUMERATOR_EXCLUSION)).toEqual(
+    expect(getPopulationCode(PopulationType.NUMERATOR)).toEqual("NUMER");
+    expect(getPopulationCode(PopulationType.NUMERATOR_EXCLUSION)).toEqual(
       "NUMEX"
     );
-    expect(getPopulationCode(MeasurePopulation.DENOMINATOR)).toEqual("DENOM");
-    expect(getPopulationCode(MeasurePopulation.DENOMINATOR_EXCLUSION)).toEqual(
+    expect(getPopulationCode(PopulationType.DENOMINATOR)).toEqual("DENOM");
+    expect(getPopulationCode(PopulationType.DENOMINATOR_EXCLUSION)).toEqual(
       "DENEX"
     );
-    expect(getPopulationCode(MeasurePopulation.DENOMINATOR_EXCEPTION)).toEqual(
+    expect(getPopulationCode(PopulationType.DENOMINATOR_EXCEPTION)).toEqual(
       "DENEXCEP"
     );
-    expect(getPopulationCode(MeasurePopulation.MEASURE_POPULATION)).toEqual(
+    expect(getPopulationCode(PopulationType.MEASURE_POPULATION)).toEqual(
       "MSRPOPL"
     );
     expect(
-      getPopulationCode(MeasurePopulation.MEASURE_POPULATION_EXCLUSION)
+      getPopulationCode(PopulationType.MEASURE_POPULATION_EXCLUSION)
     ).toEqual("MSRPOPLEX");
-    expect(getPopulationCode(MeasurePopulation.MEASURE_OBSERVATION)).toEqual(
+    expect(getPopulationCode(PopulationType.MEASURE_OBSERVATION)).toEqual(
       "OBSERV"
     );
   });
