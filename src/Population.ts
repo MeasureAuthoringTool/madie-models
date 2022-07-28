@@ -1,4 +1,4 @@
-export enum MeasurePopulation {
+export enum PopulationType {
   INITIAL_POPULATION = "initialPopulation",
   NUMERATOR = "numerator",
   NUMERATOR_EXCLUSION = "numeratorExclusion",
@@ -9,10 +9,6 @@ export enum MeasurePopulation {
   MEASURE_POPULATION_EXCLUSION = "measurePopulationExclusion",
   MEASURE_OBSERVATION = "measureObservation",
 }
-
-export type PopulationType = {
-  [key in MeasurePopulation]?: string;
-};
 
 const PopulationCodeMap = {
   initialPopulation: "IPP",
@@ -27,7 +23,13 @@ const PopulationCodeMap = {
 };
 
 export function getPopulationCode(
-  measurePopulation: MeasurePopulation
+  populationType: PopulationType
 ): string {
-  return PopulationCodeMap[measurePopulation];
+  return PopulationCodeMap[populationType];
+}
+
+export interface Population {
+  id?: string;
+  name: PopulationType;
+  definition?: string;
 }
