@@ -26,8 +26,9 @@ export interface Group {
   rateAggregation?:string;
   improvementNotation?:string;
   scoringUnit?:string;
-  stratifications?:Stratification[]
+  stratifications?: Stratification[];
   measureGroupTypes: MeasureGroupTypes[];
+  populationBasis?: string;
 }
 
 export interface Measure {
