@@ -1,5 +1,5 @@
 import { Model } from "./Model";
-import {MeasureObservation, Population} from "./Population";
+import {Population, PopulationType} from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 
@@ -18,6 +18,15 @@ export interface Stratification {
   cqlDefinition?:string;
   association?:string;
 }
+
+export interface MeasureObservation {
+  id?: string;
+  name: PopulationType;
+  definition?: string;
+  criteriaReference?: string;
+  aggregateMethod?: string;
+}
+
 export interface Group {
   id: string;
   scoring?: string;

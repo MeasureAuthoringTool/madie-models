@@ -44,37 +44,3 @@ export interface Population {
   definition?: string;
   extensions?: Extension[];
 }
-
-export interface MeasureObservation {
-  id?: string;
-  name: PopulationType;
-  definition?: string;
-  criteriaReference?: string;
-  aggregateMethod?: string;
-}
-
-// export interface Population {
-//   id?: string;
-//   name: PopulationType;
-//   definition?: string;
-//   criteriaReference?: string;
-// }
-//
-// export interface MeasureObservation extends Population {
-//   aggregateMethod?: string;
-// }
-
-
-//
-//
-// export interface Population {
-//   id?: string;
-//   name: PopulationType;
-//   definition?: string;
-//   criteriaReference?: string;
-//   aggregateMethod?: string;
-// }
-
-
-
-
