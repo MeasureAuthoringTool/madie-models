@@ -1,5 +1,5 @@
 import { Model } from "./Model";
-import {Population, PopulationType} from "./Population";
+import {Population} from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 
@@ -21,7 +21,6 @@ export interface Stratification {
 
 export interface MeasureObservation {
   id?: string;
-  name: PopulationType;
   definition?: string;
   criteriaReference?: string;
   aggregateMethod?: string;
