@@ -28,8 +28,53 @@ export function getPopulationCode(
   return PopulationCodeMap[populationType];
 }
 
+export enum ExtensionType {
+  CRITERIA_REFERENCE,
+  AGGREGATE_METHOD,
+}
+
+export interface Extension {
+  type: ExtensionType;
+  value: string;
+}
+
 export interface Population {
   id?: string;
   name: PopulationType;
   definition?: string;
+  extensions?: Extension[];
 }
+
+export interface MeasureObservation {
+  id?: string;
+  name: PopulationType;
+  definition?: string;
+  criteriaReference?: string;
+  aggregateMethod?: string;
+}
+
+// export interface Population {
+//   id?: string;
+//   name: PopulationType;
+//   definition?: string;
+//   criteriaReference?: string;
+// }
+//
+// export interface MeasureObservation extends Population {
+//   aggregateMethod?: string;
+// }
+
+
+//
+//
+// export interface Population {
+//   id?: string;
+//   name: PopulationType;
+//   definition?: string;
+//   criteriaReference?: string;
+//   aggregateMethod?: string;
+// }
+
+
+
+

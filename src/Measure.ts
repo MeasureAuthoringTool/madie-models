@@ -1,5 +1,5 @@
 import { Model } from "./Model";
-import { Population } from "./Population";
+import {MeasureObservation, Population} from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 
@@ -22,6 +22,7 @@ export interface Group {
   id: string;
   scoring?: string;
   populations?: Population[];
+  measureObservations?: MeasureObservation[];
   groupDescription?: string;
   rateAggregation?:string;
   improvementNotation?:string;
