@@ -2,6 +2,7 @@ import { Model } from "./Model";
 import {Population} from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
+import {AggregateFunctionType} from "./AggregateFunctionType";
 
 export interface MeasureMetadata {
   steward?: string;
@@ -23,7 +24,7 @@ export interface MeasureObservation {
   id?: string;
   definition?: string;
   criteriaReference?: string;
-  aggregateMethod?: string;
+  aggregateMethod?: AggregateFunctionType;
 }
 
 export interface Group {
