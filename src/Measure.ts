@@ -1,7 +1,8 @@
 import { Model } from "./Model";
-import { Population } from "./Population";
+import {Population} from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
+import {AggregateFunctionType} from "./AggregateFunctionType";
 
 export interface MeasureMetadata {
   steward?: string;
@@ -18,10 +19,19 @@ export interface Stratification {
   cqlDefinition?:string;
   association?:string;
 }
+
+export interface MeasureObservation {
+  id?: string;
+  definition?: string;
+  criteriaReference?: string;
+  aggregateMethod?: AggregateFunctionType;
+}
+
 export interface Group {
   id: string;
   scoring?: string;
   populations?: Population[];
+  measureObservations?: MeasureObservation[];
   groupDescription?: string;
   rateAggregation?:string;
   improvementNotation?:string;
