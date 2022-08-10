@@ -13,21 +13,22 @@ export interface MeasureMetadata {
   guidance?: string;
 }
 export interface Stratification {
-  id: string;
-  description?: string;
-  cqlDefinition?: string;
-  association?: string;
+  id:string;
+  description?:string;
+  cqlDefinition?:string;
+  association?:string;
 }
 export interface Group {
   id: string;
   scoring?: string;
   populations?: Population[];
   groupDescription?: string;
-  rateAggregation?: string;
-  improvementNotation?: string;
-  scoringUnit?: string;
+  rateAggregation?:string;
+  improvementNotation?:string;
+  scoringUnit?:string;
   stratifications?: Stratification[];
   measureGroupTypes: MeasureGroupTypes[];
+  populationBasis?: string;
 }
 
 export interface Measure {
@@ -52,5 +53,5 @@ export interface Measure {
   measurementPeriodEnd: Date;
   groups?: Array<Group>;
   elmJson?: string;
-  testCases?: Array<TestCase>;
+  testCases?: Array<TestCase>
 }
