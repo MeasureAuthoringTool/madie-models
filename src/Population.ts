@@ -32,4 +32,5 @@ export interface Population {
   id?: string;
   name: PopulationType;
   definition?: string;
+  associationType?: string;
 }
