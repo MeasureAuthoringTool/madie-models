@@ -18,7 +18,7 @@ test("Verifies that Measure has the correct attributes", () => {
     state: "draft",
     measureName: "TestMeasure",
     cqlLibraryName: "TestMeasureLibrary",
-    eCqmTitle: "eCqmTitle",
+    ecqmTitle: "ecqmTitle",
     cql: "random string of cql code",
     cqlErrors: true,
     createdAt: "",
