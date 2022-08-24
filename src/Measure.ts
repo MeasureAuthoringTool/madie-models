@@ -51,7 +51,7 @@ export interface Measure {
   state: string;
   measureName: string;
   cqlLibraryName: string;
-  eCqmTitle: string;
+  ecqmTitle: string;
   cqlErrors?: boolean;
   cql: string;
   createdAt: string;
