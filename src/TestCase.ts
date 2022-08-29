@@ -41,6 +41,7 @@ export interface DisplayPopulationValue {
 
 export interface HapiOperationOutcome {
   code: number;
+  successful: boolean;
   message: string;
   outcomeResponse: HapiOutcomeResponse;
 }
