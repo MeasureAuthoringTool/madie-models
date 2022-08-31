@@ -10,6 +10,7 @@ test("Verifies that Measure has the correct attributes", () => {
   
   const measure: Measure = {
     id: "test",
+    versionId: "testVersionId",
     active: true,
     measureHumanReadableId: "testReadable",
     measureSetId: "1",

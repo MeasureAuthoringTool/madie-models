@@ -43,6 +43,7 @@ export interface Group {
 
 export interface Measure {
   id: string;
+  versionId: string;
   active: boolean;
   measureHumanReadableId: string;
   measureSetId: string;
