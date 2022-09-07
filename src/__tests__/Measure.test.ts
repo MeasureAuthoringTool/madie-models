@@ -11,6 +11,7 @@ test("Verifies that Measure has the correct attributes", () => {
   const measure: Measure = {
     id: "test",
     versionId: "testVersionId",
+    cmsId: "testCmsId",
     active: true,
     measureHumanReadableId: "testReadable",
     measureSetId: "1",
