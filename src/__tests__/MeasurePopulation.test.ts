@@ -6,9 +6,7 @@ describe("MeasureScoring Model", () => {
   });
 
   it("returns population code for getPopulationCode(PopulationType)", () => {
-    expect(getPopulationCode(PopulationType.INITIAL_POPULATION)).toEqual(
-      "IPP"
-    );
+    expect(getPopulationCode(PopulationType.INITIAL_POPULATION)).toEqual("IPP");
     expect(getPopulationCode(PopulationType.NUMERATOR)).toEqual("NUMER");
     expect(getPopulationCode(PopulationType.NUMERATOR_EXCLUSION)).toEqual(
       "NUMEX"

@@ -1,8 +1,8 @@
 import { Model } from "./Model";
-import {Population} from "./Population";
+import { Population } from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
-import {AggregateFunctionType} from "./AggregateFunctionType";
+import { AggregateFunctionType } from "./AggregateFunctionType";
 
 export interface MeasureMetadata {
   steward?: string;
@@ -14,10 +14,10 @@ export interface MeasureMetadata {
   guidance?: string;
 }
 export interface Stratification {
-  id:string;
-  description?:string;
-  cqlDefinition?:string;
-  association?:string;
+  id: string;
+  description?: string;
+  cqlDefinition?: string;
+  association?: string;
 }
 
 export interface MeasureObservation {
@@ -33,9 +33,9 @@ export interface Group {
   populations?: Population[];
   measureObservations?: MeasureObservation[];
   groupDescription?: string;
-  rateAggregation?:string;
-  improvementNotation?:string;
-  scoringUnit?:string;
+  rateAggregation?: string;
+  improvementNotation?: string;
+  scoringUnit?: string;
   stratifications?: Stratification[];
   measureGroupTypes: MeasureGroupTypes[];
   populationBasis?: string;
@@ -66,5 +66,5 @@ export interface Measure {
   measurementPeriodEnd: Date;
   groups?: Array<Group>;
   elmJson?: string;
-  testCases?: Array<TestCase>
+  testCases?: Array<TestCase>;
 }
