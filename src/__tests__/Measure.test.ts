@@ -1,13 +1,13 @@
 import { Measure } from "../Measure";
 import { Model } from "../Model";
-import {TestCase} from "../TestCase";
+import { TestCase } from "../TestCase";
 
 test("Verifies that Measure has the correct attributes", () => {
   const testCase = {
     title: "DialysisBeforeEncounter",
     series: "DENEXPass",
   } as TestCase;
-  
+
   const measure: Measure = {
     id: "test",
     versionId: "testVersionId",
@@ -31,7 +31,7 @@ test("Verifies that Measure has the correct attributes", () => {
     measureMetaData: {},
     measurementPeriodEnd: new Date("01/01/2022"),
     measurementPeriodStart: new Date("12/31/2022"),
-    testCases: [testCase]
+    testCases: [testCase],
   };
 
   expect(measure.id).toEqual("test");

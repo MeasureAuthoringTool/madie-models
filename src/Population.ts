@@ -22,9 +22,7 @@ const PopulationCodeMap = {
   measureObservation: "OBSERV",
 };
 
-export function getPopulationCode(
-  populationType: PopulationType
-): string {
+export function getPopulationCode(populationType: PopulationType): string {
   return PopulationCodeMap[populationType];
 }
 

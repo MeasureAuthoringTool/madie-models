@@ -19,6 +19,7 @@ export interface TestCase {
 export interface GroupPopulation {
   groupId: string;
   scoring: string;
+  populationBasis: string;
   populationValues: PopulationExpectedValue[];
 }
 
@@ -31,6 +32,7 @@ export interface DisplayGroupPopulation {
   groupId: string;
   scoring: string;
   populationValues: DisplayPopulationValue[];
+  populationBasis: string;
 }
 
 export interface DisplayPopulationValue {
