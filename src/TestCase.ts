@@ -25,7 +25,7 @@ export interface GroupPopulation {
 
 export interface PopulationExpectedValue {
   name: PopulationType;
-  expected: boolean;
+  expected: any;
 }
 
 export interface DisplayGroupPopulation {
@@ -37,8 +37,8 @@ export interface DisplayGroupPopulation {
 
 export interface DisplayPopulationValue {
   name: PopulationType;
-  expected: boolean;
-  actual: boolean;
+  expected: any;
+  actual: any;
 }
 
 export interface HapiOperationOutcome {
