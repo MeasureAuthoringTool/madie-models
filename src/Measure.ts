@@ -12,8 +12,7 @@ export interface MeasureMetadata {
   rationale?: string;
   author?: string;
   guidance?: string;
-  clinical?: string;
-
+  clinicalRecommendation?: string;
 }
 export interface Stratification {
   id: string;
