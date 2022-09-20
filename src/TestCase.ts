@@ -26,6 +26,8 @@ export interface GroupPopulation {
 export interface PopulationExpectedValue {
   name: PopulationType;
   expected: any;
+  id: string;
+  criteriaReference: string;
 }
 
 export interface DisplayGroupPopulation {
@@ -39,6 +41,8 @@ export interface DisplayPopulationValue {
   name: PopulationType;
   expected: any;
   actual: any;
+  id: string;
+  criteriaReference: string;
 }
 
 export interface HapiOperationOutcome {
