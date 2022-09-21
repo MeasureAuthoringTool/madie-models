@@ -7,3 +7,4 @@ export * from "./CqlLibrary";
 export * from "./GroupScoring";
 export * from "./MeasureGroupTypes";
 export * from "./AggregateFunctionType";
+export * from "./Organization";

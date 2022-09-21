@@ -6,11 +6,11 @@ import { AggregateFunctionType } from "./AggregateFunctionType";
 
 export interface MeasureMetadata {
   steward?: string;
+  developers?: string[];
   description?: string;
   copyright?: string;
   disclaimer?: string;
   rationale?: string;
-  author?: string;
   guidance?: string;
   clinicalRecommendation?: string;
 }
