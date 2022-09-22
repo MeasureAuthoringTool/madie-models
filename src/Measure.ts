@@ -1,5 +1,5 @@
 import { Model } from "./Model";
-import { Population } from "./Population";
+import { Population, PopulationType } from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 import { AggregateFunctionType } from "./AggregateFunctionType";
@@ -18,7 +18,7 @@ export interface Stratification {
   id: string;
   description?: string;
   cqlDefinition?: string;
-  association?: string;
+  association?: PopulationType;
 }
 
 export interface MeasureObservation {
