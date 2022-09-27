@@ -23,16 +23,17 @@ export interface MeasureMetadata {
   supplementalDataElements?: string;
 }
 
-export interface Reference{
+export interface Reference {
   id?: string;
   referenceText?: string;
   referenceType?: string;
-};
+}
+
 export interface Endorsement {
   id?: string;
   endorser?: string;
   endorsementId?: string;
-};
+}
 
 export interface Stratification {
   id: string;
