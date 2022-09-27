@@ -23,12 +23,19 @@ const PopulationCodeMap = {
 };
 
 export function getPopulationCode(populationType: PopulationType): string {
-  return PopulationCodeMap[populationType];
+  if (PopulationCodeMap[populationType] == undefined)
+  {
+    return populationType;
+  }
+  else {
+    return PopulationCodeMap[populationType]
+  }
 }
+
 
 export interface Population {
   id?: string;
-  name: PopulationType;
+  name: PopulationType ;
   definition?: string;
   associationType?: string;
   description?:string;
