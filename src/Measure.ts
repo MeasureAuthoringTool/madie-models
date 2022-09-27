@@ -13,7 +13,28 @@ export interface MeasureMetadata {
   rationale?: string;
   guidance?: string;
   clinicalRecommendation?: string;
+  draft?: boolean;
+  references?: Array<Reference>;
+  endorsements?: Array<Endorsement>;
+  riskAdjustment?: string;
+  definition?: string;
+  experimental?: boolean;
+  transmissionFormat?: string;
+  supplementalDataElements?: string;
 }
+
+export interface Reference {
+  id?: string;
+  referenceText?: string;
+  referenceType?: string;
+}
+
+export interface Endorsement {
+  id?: string;
+  endorser?: string;
+  endorsementId?: string;
+}
+
 export interface Stratification {
   id: string;
   description?: string;
