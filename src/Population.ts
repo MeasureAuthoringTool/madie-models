@@ -31,4 +31,5 @@ export interface Population {
   name: PopulationType;
   definition?: string;
   associationType?: string;
+  description?:string;
 }
