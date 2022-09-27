@@ -12,7 +12,7 @@ test("Verifies the correct PopulationType is returned for a string", () => {
 
 
 test("Verifies the correct PopulationType is when no matxch in Enum", () => {
-  let popCode: string = getPopulationCode("widget" as PopulationType);
+  const popCode: string = getPopulationCode("widget" as PopulationType);
   expect(popCode).toBe("widget");
 
 });
