@@ -21,29 +21,35 @@ export interface GroupPopulation {
   scoring: string;
   populationBasis: string;
   populationValues: PopulationExpectedValue[];
+  stratificationValues: PopulationExpectedValue[];
 }
 
 export interface PopulationExpectedValue {
-  name: PopulationType;
-  expected: any;
   id: string;
   criteriaReference: string;
+  name: PopulationType | string;
+  expected: boolean | number;
+  actual?:boolean | number;  
 }
+
 
 export interface DisplayGroupPopulation {
   groupId: string;
   scoring: string;
-  populationValues: DisplayPopulationValue[];
   populationBasis: string;
+  populationValues: DisplayPopulationValue[];
+  stratificationValues: DisplayPopulationValue[];
 }
 
+
 export interface DisplayPopulationValue {
-  name: PopulationType;
-  expected: any;
-  actual: any;
+  name: PopulationType | string;
+  actual?: boolean | number;
   id: string;
   criteriaReference: string;
+  expected: boolean | number;
 }
+
 
 export interface HapiOperationOutcome {
   code: number;
