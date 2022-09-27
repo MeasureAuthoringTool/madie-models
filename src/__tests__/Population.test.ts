@@ -5,7 +5,7 @@ test("Verifies that Population has the correct enum values", () => {
 });
 
 test("Verifies the correct PopulationType is returned for a string", () => {
-  let popCode: string = getPopulationCode(PopulationType.DENOMINATOR);
+  const popCode: string = getPopulationCode(PopulationType.DENOMINATOR);
   expect(popCode).toBe("DENOM");
 
 });
