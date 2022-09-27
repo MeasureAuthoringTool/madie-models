@@ -26,7 +26,7 @@ export interface GroupPopulation {
 
 export interface PopulationExpectedValue {
   id: string;
-  criteriaReference: string;
+  criteriaReference?: string;
   name: PopulationType | string;
   expected: boolean | number;
   actual?:boolean | number;  
@@ -46,7 +46,7 @@ export interface DisplayPopulationValue {
   name: PopulationType | string;
   actual?: boolean | number;
   id: string;
-  criteriaReference: string;
+  criteriaReference?: string;
   expected: boolean | number;
 }
 
