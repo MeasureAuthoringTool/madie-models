@@ -63,6 +63,11 @@ export interface Group {
   populationBasis?: string;
 }
 
+export interface Acl {
+  userId: string;
+  roles: Array<string>;
+}
+
 export interface Measure {
   id: string;
   versionId: string;
@@ -89,4 +94,5 @@ export interface Measure {
   groups?: Array<Group>;
   elmJson?: string;
   testCases?: Array<TestCase>;
+  acls?: Array<Acl>;
 }
