@@ -13,6 +13,7 @@ export interface TestCase {
   json?: string;
   executionStatus: string;
   groupPopulations: GroupPopulation[];
+  validResource: boolean;
   hapiOperationOutcome: HapiOperationOutcome;
 }
 
