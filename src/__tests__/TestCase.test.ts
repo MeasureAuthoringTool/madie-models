@@ -15,6 +15,7 @@ describe("TestCase Model", () => {
       json: "{}",
       executionStatus: "FAIL",
       groupPopulations: [],
+      isValidResource: false,
       hapiOperationOutcome: {} as HapiOperationOutcome,
     } as TestCase;
 
