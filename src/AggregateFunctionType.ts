@@ -4,11 +4,6 @@ export enum AggregateFunctionType {
   MAXIMUM = "Maximum",
   MEDIAN = "Median",
   MINIMUM = "Minimum",
-  MODE = "Mode",
-  POPULATION_STANDARD_DEVIATION = "Population Standard Deviation",
-  POPULATION_VARIANCE = "Population Variance",
-  SAMPLE_STANDARD_DEVIATION = "Sample Standard Deviation",
-  SAMPLE_VARIANCE = "Sample Variance",
   SUM = "Sum",
 }
 
