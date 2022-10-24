@@ -8,6 +8,8 @@ export enum PopulationType {
   MEASURE_POPULATION = "measurePopulation",
   MEASURE_POPULATION_EXCLUSION = "measurePopulationExclusion",
   MEASURE_OBSERVATION = "measureObservation",
+  DENOMINATOR_OBSERVATION = "denominatorObservation",
+  NUMERATOR_OBSERVATION = "numeratorObservation"
 }
 
 const PopulationCodeMap = {
@@ -20,6 +22,8 @@ const PopulationCodeMap = {
   measurePopulation: "MSRPOPL",
   measurePopulationExclusion: "MSRPOPLEX",
   measureObservation: "OBSERV",
+  numeratorObservation: "NUMEROBSERV",
+  denominatorObservation: "DENOMOBSERV"
 };
 
 export function getPopulationCode(populationType: PopulationType): string {
