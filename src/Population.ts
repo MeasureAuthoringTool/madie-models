@@ -9,7 +9,8 @@ export enum PopulationType {
   MEASURE_POPULATION_EXCLUSION = "measurePopulationExclusion",
   MEASURE_OBSERVATION = "measureObservation",
   DENOMINATOR_OBSERVATION = "denominatorObservation",
-  NUMERATOR_OBSERVATION = "numeratorObservation"
+  NUMERATOR_OBSERVATION = "numeratorObservation",
+  MEASURE_POPULATION_OBSERVATION = "measurePopulationObservation"
 }
 
 export interface Population {
