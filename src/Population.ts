@@ -13,29 +13,6 @@ export enum PopulationType {
   MEASURE_POPULATION_OBSERVATION = "measurePopulationObservation"
 }
 
-const PopulationCodeMap = {
-  initialPopulation: "IPP",
-  numerator: "NUMER",
-  numeratorExclusion: "NUMEX",
-  denominator: "DENOM",
-  denominatorExclusion: "DENEX",
-  denominatorException: "DENEXCEP",
-  measurePopulation: "MSRPOPL",
-  measurePopulationExclusion: "MSRPOPLEX",
-  measureObservation: "OBSERV",
-  numeratorObservation: "NUMEROBSERV",
-  denominatorObservation: "DENOMOBSERV",
-  measurePopulationObservation:"MSRPOPOBSERV"
-};
-
-export function getPopulationCode(populationType: PopulationType): string {
-  if (PopulationCodeMap[populationType] == undefined) {
-    return populationType;
-  } else {
-    return PopulationCodeMap[populationType];
-  }
-}
-
 export interface Population {
   id?: string;
   name: PopulationType;
