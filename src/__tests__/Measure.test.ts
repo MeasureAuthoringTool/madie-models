@@ -15,7 +15,7 @@ test("Verifies that Measure has the correct attributes", () => {
     active: true,
     measureHumanReadableId: "testReadable",
     measureSetId: "1",
-    version: 1,
+    version: "1",
     revisionNumber: 2,
     state: "draft",
     measureName: "TestMeasure",
