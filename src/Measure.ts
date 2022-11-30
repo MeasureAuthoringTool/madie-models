@@ -75,7 +75,7 @@ export interface Measure {
   active: boolean;
   measureHumanReadableId: string;
   measureSetId: string;
-  version: number;
+  version: string;
   revisionNumber: number;
   state: string;
   measureName: string;
