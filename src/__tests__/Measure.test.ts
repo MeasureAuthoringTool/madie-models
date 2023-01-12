@@ -16,7 +16,6 @@ test("Verifies that Measure has the correct attributes", () => {
     measureHumanReadableId: "testReadable",
     measureSetId: "1",
     version: "1",
-    revisionNumber: 2,
     state: "draft",
     measureName: "TestMeasure",
     cqlLibraryName: "TestMeasureLibrary",

@@ -76,7 +76,6 @@ export interface Measure {
   measureHumanReadableId: string;
   measureSetId: string;
   version: string;
-  revisionNumber: number;
   state: string;
   measureName: string;
   cqlLibraryName: string;
