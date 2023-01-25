@@ -22,13 +22,21 @@ export interface GroupPopulation {
   scoring: string;
   populationBasis: string;
   populationValues: PopulationExpectedValue[];
-  stratificationValues: PopulationExpectedValue[];
+  stratificationValues: StratificationExpectedValue[];
 }
 
 export interface PopulationExpectedValue {
   id: string;
   criteriaReference?: string;
-  name: PopulationType | string;
+  name: PopulationType;
+  expected: boolean | number;
+  actual?: boolean | number;
+}
+
+export interface StratificationExpectedValue {
+  id: string;
+  criteriaReference?: string;
+  name: string;
   expected: boolean | number;
   actual?: boolean | number;
 }
