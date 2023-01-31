@@ -46,11 +46,19 @@ export interface DisplayGroupPopulation {
   scoring: string;
   populationBasis: string;
   populationValues: DisplayPopulationValue[];
-  stratificationValues: DisplayPopulationValue[];
+  stratificationValues: DisplayStratificationValue[];
 }
 
 export interface DisplayPopulationValue {
-  name: PopulationType | string;
+  name: PopulationType;
+  actual?: boolean | number;
+  id: string;
+  criteriaReference?: string;
+  expected: boolean | number;
+}
+
+export interface DisplayStratificationValue {
+  name: string;
   actual?: boolean | number;
   id: string;
   criteriaReference?: string;
