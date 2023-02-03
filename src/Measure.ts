@@ -68,6 +68,14 @@ export interface Acl {
   roles: Array<string>;
 }
 
+export enum MeasureErrorType {
+  MISSING_ELM = "MISSING_ELM",
+  ERRORS_ELM_JSON = "ERRORS_ELM_JSON",
+  MISMATCH_CQL_POPULATION_RETURN_TYPES = "MISMATCH_CQL_POPULATION_RETURN_TYPES",
+  MISMATCH_CQL_RISK_ADJUSTMENT = "MISMATCH_CQL_RISK_ADJUSTMENT",
+  MISMATCH_CQL_SUPPLEMENTAL_DATA = "MISMATCH_CQL_SUPPLEMENTAL_DATA",
+}
+
 export interface Measure {
   id: string;
   versionId: string;
@@ -81,6 +89,7 @@ export interface Measure {
   cqlLibraryName: string;
   ecqmTitle: string;
   cqlErrors?: boolean;
+  errors?: MeasureErrorType[];
   cql: string;
   createdAt: string;
   createdBy: string;
