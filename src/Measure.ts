@@ -76,6 +76,16 @@ export enum MeasureErrorType {
   MISMATCH_CQL_SUPPLEMENTAL_DATA = "MISMATCH_CQL_SUPPLEMENTAL_DATA",
 }
 
+export interface SupplementalData {
+  definition: string;
+  description?: string;
+}
+
+export interface RiskAdjustment {
+  definition: string;
+  description?: string;
+}
+
 export interface Measure {
   id: string;
   versionId: string;
@@ -103,4 +113,6 @@ export interface Measure {
   elmJson?: string;
   testCases?: Array<TestCase>;
   acls?: Array<Acl>;
+  supplementalData?: Array<SupplementalData>;
+  riskAdjustment?: Array<RiskAdjustment>;
 }
