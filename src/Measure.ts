@@ -81,10 +81,7 @@ export interface SupplementalData {
   description?: string;
 }
 
-export interface RiskAdjustment {
-  definition: string;
-  description?: string;
-}
+export type RiskAdjustment = SupplementalData;
 
 export interface Measure {
   id: string;
