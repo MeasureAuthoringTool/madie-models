@@ -45,6 +45,7 @@ export interface Stratification {
 export interface MeasureObservation {
   id?: string;
   definition?: string;
+  description?: string;
   criteriaReference?: string;
   aggregateMethod?: AggregateFunctionType;
 }
