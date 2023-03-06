@@ -1,4 +1,5 @@
 import { Model } from "./Model";
+import {ProgramUseContext} from "./ProgramUseContext";
 
 export interface CqlLibrary {
   id: string;
@@ -16,4 +17,5 @@ export interface CqlLibrary {
   publisher?: string;
   description?: string;
   experimental?: boolean;
+  programUseContext?: ProgramUseContext;
 }
