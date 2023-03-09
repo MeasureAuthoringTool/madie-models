@@ -3,6 +3,7 @@ import { Population, PopulationType } from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 import { AggregateFunctionType } from "./AggregateFunctionType";
+import { ProgramUseContext } from "./ProgramUseContext";
 
 export interface MeasureMetadata {
   steward?: string;
@@ -113,4 +114,5 @@ export interface Measure {
   acls?: Array<Acl>;
   supplementalData?: Array<SupplementalData>;
   riskAdjustment?: Array<RiskAdjustment>;
+  programUseContext?: ProgramUseContext;
 }
