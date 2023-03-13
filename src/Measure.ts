@@ -34,6 +34,7 @@ export interface Endorsement {
   id?: string;
   endorser?: string;
   endorsementId?: string;
+  endorserSystemId?: string;
 }
 
 export interface Stratification {
