@@ -4,10 +4,11 @@ import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 import { AggregateFunctionType } from "./AggregateFunctionType";
 import { ProgramUseContext } from "./ProgramUseContext";
+import { Organization } from "./Organization";
 
 export interface MeasureMetadata {
-  steward?: string;
-  developers?: string[];
+  steward?: Organization;
+  developers?: Array<Organization>;
   description?: string;
   copyright?: string;
   disclaimer?: string;
