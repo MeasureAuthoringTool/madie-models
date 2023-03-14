@@ -8,7 +8,7 @@ import { Organization } from "./Organization";
 
 export interface MeasureMetadata {
   steward?: Organization;
-  developers?: Organization[];
+  developers?: Array<Organization>;
   description?: string;
   copyright?: string;
   disclaimer?: string;
