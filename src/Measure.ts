@@ -38,6 +38,11 @@ export interface Endorsement {
   endorserSystemId?: string;
 }
 
+export interface EndorsementOrganization {
+  id?: string;
+  endorserOrganization?: string;
+}
+
 export interface Stratification {
   id: string;
   description?: string;
