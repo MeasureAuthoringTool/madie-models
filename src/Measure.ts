@@ -122,4 +122,5 @@ export interface Measure {
   supplementalData?: Array<SupplementalData>;
   riskAdjustment?: Array<RiskAdjustment>;
   programUseContext?: ProgramUseContext;
+  scoring?: string | "";
 }
