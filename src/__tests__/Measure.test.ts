@@ -31,6 +31,7 @@ test("Verifies that Measure has the correct attributes", () => {
     measurementPeriodEnd: new Date("01/01/2022"),
     measurementPeriodStart: new Date("12/31/2022"),
     testCases: [testCase],
+    baseConfigurationTypes: [],
   };
 
   expect(measure.id).toEqual("test");
