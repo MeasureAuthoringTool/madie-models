@@ -125,4 +125,5 @@ export interface Measure {
   programUseContext?: ProgramUseContext;
   scoring?: string;
   baseConfigurationTypes: BaseConfigurationTypes[];
+  patientBasis?: boolean;
 }
