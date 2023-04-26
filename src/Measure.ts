@@ -123,4 +123,5 @@ export interface Measure {
   riskAdjustment?: Array<RiskAdjustment>;
   programUseContext?: ProgramUseContext;
   scoring?: string;
+  patientBasis?: boolean;
 }
