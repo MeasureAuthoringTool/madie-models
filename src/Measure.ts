@@ -126,4 +126,5 @@ export interface Measure {
   scoring?: string;
   baseConfigurationTypes: BaseConfigurationTypes[];
   patientBasis?: boolean;
+  rateAggregation?: string;
 }
