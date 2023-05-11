@@ -127,4 +127,5 @@ export interface Measure {
   baseConfigurationTypes: BaseConfigurationTypes[];
   patientBasis?: boolean;
   rateAggregation?: string;
+  improvementNotation?: string;
 }
