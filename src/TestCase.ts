@@ -15,6 +15,7 @@ export interface TestCase {
   groupPopulations: GroupPopulation[];
   validResource: boolean;
   hapiOperationOutcome: HapiOperationOutcome;
+  demographics?: Demographics;
 }
 
 export interface GroupPopulation {
@@ -83,4 +84,12 @@ export interface HapiIssue {
   code: string;
   diagnostics: string;
   location: string[];
+}
+
+export interface RaceCode {
+  code?: string;
+  display?: string;
+}
+export interface Demographics {
+  raceCode?: RaceCode;
 }
