@@ -78,6 +78,13 @@ export interface Acl {
   roles: Array<string>;
 }
 
+export interface MeasureSet{
+  id: string;
+  measureSetId: string;
+  owner: string;
+  acls?: Array<Acl>;
+}
+
 export enum MeasureErrorType {
   MISSING_ELM = "MISSING_ELM",
   ERRORS_ELM_JSON = "ERRORS_ELM_JSON",
@@ -127,4 +134,6 @@ export interface Measure {
   baseConfigurationTypes: BaseConfigurationTypes[];
   patientBasis?: boolean;
   rateAggregation?: string;
+  measureSet?: MeasureSet;
+  improvementNotation?: string;
 }
