@@ -134,4 +134,5 @@ export interface Measure {
   patientBasis?: boolean;
   rateAggregation?: string;
   measureSet?:MeasureSet;
+  improvementNotation?: string;
 }
