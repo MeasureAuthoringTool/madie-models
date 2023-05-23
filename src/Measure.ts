@@ -82,7 +82,7 @@ export interface MeasureSet{
   id: string;
   measureSetId: string;
   owner: string;
-  acls: Array<Acl>;
+  acls?: Array<Acl>;
 }
 
 export enum MeasureErrorType {
