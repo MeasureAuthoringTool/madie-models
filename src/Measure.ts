@@ -128,7 +128,8 @@ export interface Measure {
   testCases?: Array<TestCase>;
   acls?: Array<Acl>;
   supplementalData?: Array<SupplementalData>;
-  riskAdjustment?: Array<RiskAdjustment>;
+  riskAdjustments?: Array<RiskAdjustment>;
+  riskAdjustmentDescription?: string
   programUseContext?: ProgramUseContext;
   scoring?: string;
   baseConfigurationTypes: BaseConfigurationTypes[];
