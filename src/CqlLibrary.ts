@@ -18,7 +18,6 @@ export interface CqlLibrary {
   cql: string;
   version: string;
   draft: boolean;
-  groupId: string;
   createdAt: string;
   createdBy: string;
   lastModifiedAt: string;
