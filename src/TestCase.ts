@@ -15,6 +15,7 @@ export interface TestCase {
   groupPopulations: GroupPopulation[];
   validResource: boolean;
   hapiOperationOutcome: HapiOperationOutcome;
+  patientId: string;
 }
 
 export interface GroupPopulation {
