@@ -78,7 +78,7 @@ export interface Acl {
   roles: Array<string>;
 }
 
-export interface MeasureSet{
+export interface MeasureSet {
   id: string;
   measureSetId: string;
   owner: string;
@@ -128,7 +128,9 @@ export interface Measure {
   testCases?: Array<TestCase>;
   acls?: Array<Acl>;
   supplementalData?: Array<SupplementalData>;
-  riskAdjustment?: Array<RiskAdjustment>;
+  supplementalDataDescription?: string;
+  riskAdjustments?: Array<RiskAdjustment>;
+  riskAdjustmentDescription?: string;
   programUseContext?: ProgramUseContext;
   scoring?: string;
   baseConfigurationTypes: BaseConfigurationTypes[];
