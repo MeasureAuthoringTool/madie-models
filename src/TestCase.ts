@@ -85,3 +85,14 @@ export interface HapiIssue {
   diagnostics: string;
   location: string[];
 }
+
+export interface TestCaseImportRequest {
+  patientId: string;
+  json: string;
+}
+
+export interface TestCaseImportOutcome {
+  patientId: string;
+  message: string;
+  successful: boolean;
+}
