@@ -3,7 +3,6 @@ import { Population, PopulationType } from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 import { AggregateFunctionType } from "./AggregateFunctionType";
-import { ProgramUseContext } from "./ProgramUseContext";
 import { Organization } from "./Organization";
 import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 
@@ -131,7 +130,6 @@ export interface Measure {
   supplementalDataDescription?: string;
   riskAdjustments?: Array<RiskAdjustment>;
   riskAdjustmentDescription?: string;
-  programUseContext?: ProgramUseContext;
   scoring?: string;
   baseConfigurationTypes: BaseConfigurationTypes[];
   patientBasis?: boolean;
