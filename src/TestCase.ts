@@ -15,6 +15,7 @@ export interface TestCase {
   groupPopulations: GroupPopulation[];
   validResource: boolean;
   hapiOperationOutcome: HapiOperationOutcome;
+  patientId: string;
 }
 
 export interface GroupPopulation {
@@ -83,4 +84,15 @@ export interface HapiIssue {
   code: string;
   diagnostics: string;
   location: string[];
+}
+
+export interface TestCaseImportRequest {
+  patientId: string;
+  json: string;
+}
+
+export interface TestCaseImportOutcome {
+  patientId: string;
+  message: string;
+  successful: boolean;
 }

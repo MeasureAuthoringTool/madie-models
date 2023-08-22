@@ -3,8 +3,8 @@ import { Population, PopulationType } from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 import { AggregateFunctionType } from "./AggregateFunctionType";
-import { ProgramUseContext } from "./ProgramUseContext";
 import { Organization } from "./Organization";
+import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 
 export interface MeasureMetadata {
   steward?: Organization;
@@ -77,6 +77,13 @@ export interface Acl {
   roles: Array<string>;
 }
 
+export interface MeasureSet {
+  id: string;
+  measureSetId: string;
+  owner: string;
+  acls?: Array<Acl>;
+}
+
 export enum MeasureErrorType {
   MISSING_ELM = "MISSING_ELM",
   ERRORS_ELM_JSON = "ERRORS_ELM_JSON",
@@ -120,6 +127,13 @@ export interface Measure {
   testCases?: Array<TestCase>;
   acls?: Array<Acl>;
   supplementalData?: Array<SupplementalData>;
-  riskAdjustment?: Array<RiskAdjustment>;
-  programUseContext?: ProgramUseContext;
+  supplementalDataDescription?: string;
+  riskAdjustments?: Array<RiskAdjustment>;
+  riskAdjustmentDescription?: string;
+  scoring?: string;
+  baseConfigurationTypes: BaseConfigurationTypes[];
+  patientBasis?: boolean;
+  rateAggregation?: string;
+  measureSet?: MeasureSet;
+  improvementNotation?: string;
 }
