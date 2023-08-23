@@ -1,6 +1,5 @@
 import { Model } from "./Model";
 import { Acl } from "./Measure";
-import {ProgramUseContext} from "./ProgramUseContext";
 
 export interface LibrarySet {
   id: string;
@@ -26,5 +25,4 @@ export interface CqlLibrary {
   description?: string;
   experimental?: boolean;
   librarySet?: LibrarySet;
-  programUseContext?: ProgramUseContext;
 }
