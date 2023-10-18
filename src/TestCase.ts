@@ -40,6 +40,7 @@ export interface StratificationExpectedValue {
   name: string;
   expected: boolean | number;
   actual?: boolean | number;
+  populationValues?: PopulationExpectedValue[];
 }
 
 export interface DisplayGroupPopulation {
