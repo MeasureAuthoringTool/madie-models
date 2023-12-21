@@ -6,7 +6,7 @@ import { AggregateFunctionType } from "./AggregateFunctionType";
 import { Organization } from "./Organization";
 import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 
-export interface QDMMeasureDefinition {
+export interface MeasureDefinition {
   term: string;
   definition: string;
 }
@@ -28,7 +28,7 @@ export interface MeasureMetadata {
   experimental?: boolean;
   transmissionFormat?: string;
   supplementalDataElements?: string;
-  qdmMeasureDefinitions?: Array<QDMMeasureDefinition>
+  measureDefinitions?: Array<MeasureDefinition>
 }
 
 export interface Reference {
