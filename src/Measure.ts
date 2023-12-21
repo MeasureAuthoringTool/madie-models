@@ -7,6 +7,11 @@ import { ProgramUseContext } from "./ProgramUseContext";
 import { Organization } from "./Organization";
 import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 
+export interface QDMMeasureDefinition {
+  term: string;
+  definition: string;
+}
+
 export interface MeasureMetadata {
   steward?: Organization;
   developers?: Array<Organization>;
@@ -24,6 +29,7 @@ export interface MeasureMetadata {
   experimental?: boolean;
   transmissionFormat?: string;
   supplementalDataElements?: string;
+  qdmMeasureDefinitions?: Array<QDMMeasureDefinition>;
 }
 
 export interface Reference {
