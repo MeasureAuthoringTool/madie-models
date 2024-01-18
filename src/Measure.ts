@@ -72,6 +72,7 @@ export interface Group {
   groupDescription?: string;
   rateAggregation?: string;
   improvementNotation?: string;
+  improvementNotationOther?: string;
   scoringUnit?: string;
   stratifications?: Stratification[];
   measureGroupTypes: MeasureGroupTypes[];
