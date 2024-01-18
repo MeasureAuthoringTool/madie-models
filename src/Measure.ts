@@ -3,9 +3,13 @@ import { Population, PopulationType } from "./Population";
 import { TestCase } from "./TestCase";
 import { MeasureGroupTypes } from "./MeasureGroupTypes";
 import { AggregateFunctionType } from "./AggregateFunctionType";
-import { ProgramUseContext } from "./ProgramUseContext";
 import { Organization } from "./Organization";
 import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
+
+export interface MeasureDefinition {
+  term: string;
+  definition: string;
+}
 
 export interface MeasureMetadata {
   steward?: Organization;
@@ -24,6 +28,7 @@ export interface MeasureMetadata {
   experimental?: boolean;
   transmissionFormat?: string;
   supplementalDataElements?: string;
+  measureDefinitions?: Array<MeasureDefinition>
 }
 
 export interface Reference {
@@ -79,7 +84,7 @@ export interface Acl {
   roles: Array<string>;
 }
 
-export interface MeasureSet{
+export interface MeasureSet {
   id: string;
   measureSetId: string;
   owner: string;
@@ -129,8 +134,9 @@ export interface Measure {
   testCases?: Array<TestCase>;
   acls?: Array<Acl>;
   supplementalData?: Array<SupplementalData>;
-  riskAdjustment?: Array<RiskAdjustment>;
-  programUseContext?: ProgramUseContext;
+  supplementalDataDescription?: string;
+  riskAdjustments?: Array<RiskAdjustment>;
+  riskAdjustmentDescription?: string;
   scoring?: string;
   baseConfigurationTypes: BaseConfigurationTypes[];
   patientBasis?: boolean;

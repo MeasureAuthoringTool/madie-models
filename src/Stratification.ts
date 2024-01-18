@@ -1,4 +1,4 @@
-import { PopulationType } from "./Population";
+import { PopulationType} from "./Population";
 
 export interface Stratification {
   id: string;

@@ -17,6 +17,7 @@ describe("TestCase Model", () => {
       groupPopulations: [],
       validResource: false,
       hapiOperationOutcome: {} as HapiOperationOutcome,
+      patientId: "test patient id",
     } as TestCase;
 
     expect(testCase.id).toEqual("abc-pqr");
