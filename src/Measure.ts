@@ -7,6 +7,7 @@ import { Organization } from "./Organization";
 import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 
 export interface MeasureDefinition {
+  id: string;
   term: string;
   definition: string;
 }
