@@ -19,15 +19,15 @@ test("Verifies that Cql Library has the correct attributes", () => {
     description: "",
     experimental: false,
     librarySet: {
-      id:"2",
+      id: "2",
       librarySetId: "1",
       owner: "",
-      acls: []
-    }
+      acls: [],
+    },
   };
 
   expect(cqlLibrary.id).toEqual("test");
-  expect(cqlLibrary.librarySetId).toEqual("1")
-  expect(cqlLibrary.librarySet?.librarySetId).toEqual("1")
+  expect(cqlLibrary.librarySetId).toEqual("1");
+  expect(cqlLibrary.librarySet?.librarySetId).toEqual("1");
   expect(cqlLibrary.cqlLibraryName).toEqual("TestingCqlLibrary");
 });
