@@ -29,7 +29,7 @@ export interface MeasureMetadata {
   experimental?: boolean;
   transmissionFormat?: string;
   supplementalDataElements?: string;
-  measureDefinitions?: Array<MeasureDefinition>
+  measureDefinitions?: Array<MeasureDefinition>;
 }
 
 export interface Reference {
@@ -90,11 +90,6 @@ export interface MeasureSet {
   measureSetId: string;
   owner: string;
   acls?: Array<Acl>;
-}
-
-export interface Generator{
-  id: string;
-  currentValue:number
 }
 
 export enum MeasureErrorType {
