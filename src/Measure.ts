@@ -29,7 +29,7 @@ export interface MeasureMetadata {
   experimental?: boolean;
   transmissionFormat?: string;
   supplementalDataElements?: string;
-  measureDefinitions?: Array<MeasureDefinition>
+  measureDefinitions?: Array<MeasureDefinition>;
 }
 
 export interface Reference {
@@ -86,6 +86,7 @@ export interface Acl {
 
 export interface MeasureSet {
   id: string;
+  cmsId?: number;
   measureSetId: string;
   owner: string;
   acls?: Array<Acl>;
