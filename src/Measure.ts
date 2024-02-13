@@ -86,9 +86,15 @@ export interface Acl {
 
 export interface MeasureSet {
   id: string;
+  cmsId: number;
   measureSetId: string;
   owner: string;
   acls?: Array<Acl>;
+}
+
+export interface Generator{
+  id: string;
+  currentValue:number
 }
 
 export enum MeasureErrorType {
