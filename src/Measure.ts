@@ -86,7 +86,7 @@ export interface Acl {
 
 export interface MeasureSet {
   id: string;
-  cmsId: number;
+  cmsId?: number;
   measureSetId: string;
   owner: string;
   acls?: Array<Acl>;
