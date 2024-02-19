@@ -6,12 +6,6 @@ import { AggregateFunctionType } from "./AggregateFunctionType";
 import { Organization } from "./Organization";
 import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 
-export interface MeasureDefinition {
-  id: string;
-  term: string;
-  definition: string;
-}
-
 export interface MeasureMetadata {
   steward?: Organization;
   developers?: Array<Organization>;
@@ -29,7 +23,6 @@ export interface MeasureMetadata {
   experimental?: boolean;
   transmissionFormat?: string;
   supplementalDataElements?: string;
-  measureDefinitions?: Array<MeasureDefinition>;
 }
 
 export interface Reference {
