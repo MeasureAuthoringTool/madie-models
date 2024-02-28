@@ -23,6 +23,7 @@ export interface MeasureMetadata {
   experimental?: boolean;
   transmissionFormat?: string;
   supplementalDataElements?: string;
+  measureSetTitle?: string;
 }
 
 export interface Reference {
