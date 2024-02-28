@@ -100,6 +100,11 @@ export interface SupplementalData {
 
 export type RiskAdjustment = SupplementalData;
 
+export interface TestCaseConfiguration {
+  id?: string;
+  sdeIncluded?: boolean;
+}
+
 export interface Measure {
   id: string;
   versionId: string;
@@ -138,4 +143,5 @@ export interface Measure {
   measureSet?: MeasureSet;
   improvementNotation?: string;
   improvementNotationOther?: string;
+  testCaseConfiguration?: TestCaseConfiguration;
 }
