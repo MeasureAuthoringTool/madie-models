@@ -104,6 +104,7 @@ export type RiskAdjustment = SupplementalData;
 export interface TestCaseConfiguration {
   id?: string;
   sdeIncluded?: boolean;
+  isManifestExpansion?: boolean;
 }
 
 export interface Measure {
