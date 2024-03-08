@@ -101,10 +101,15 @@ export interface SupplementalData {
 
 export type RiskAdjustment = SupplementalData;
 
+export interface ManifestExpansion {
+  fullUrl: string;
+  id: string;
+}
+
 export interface TestCaseConfiguration {
   id?: string;
   sdeIncluded?: boolean;
-  isManifestExpansion?: boolean;
+  manifestExpansion?: ManifestExpansion;
 }
 
 export interface Measure {
