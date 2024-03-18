@@ -94,7 +94,7 @@ export interface TestCaseImportRequest {
 
 export interface TestCaseImportOutcome {
   familyName?: string;
-  givenNames?: Array<String>;
+  givenNames?: Array<string>;
   patientId: string;
   message: string;
   successful: boolean;
