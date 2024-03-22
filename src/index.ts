@@ -9,3 +9,4 @@ export * from "./MeasureGroupTypes";
 export * from "./AggregateFunctionType";
 export * from "./Organization";
 export * from "./BaseConfigurationTypes";
+export * from "./TestCaseExcelExportDto";
