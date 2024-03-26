@@ -5,7 +5,7 @@ export interface TestCaseExcelExportDto {
 }
 
 export interface TestCaseExecutionResultDto {
-  populations: Array<Population>;
+  populations: Array<PopulationDto>;
   notes?: string;
   last: string;
   first: string;
@@ -15,22 +15,22 @@ export interface TestCaseExecutionResultDto {
   ethnicity?: string;
   race?: string;
   gender?: string;
-  definitions: Array<Definition>;
-  functions: Array<Func>;
+  definitions: Array<DefinitionDto>;
+  functions: Array<FunctionDto>;
 }
 
-export interface Population {
+export interface PopulationDto {
   name: string;
   expected: number;
   actual: number;
 }
 
-export interface Definition {
+export interface DefinitionDto {
   logic: string;
   actual: string;
 }
 
-export interface Func {
+export interface FunctionDto {
   logic: string;
   actual: string;
 }
