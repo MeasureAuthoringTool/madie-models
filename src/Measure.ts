@@ -99,6 +99,12 @@ export interface SupplementalData {
   description?: string;
 }
 
+export interface Reporting {
+  rateAggregation?: string;
+  improvementNotation?: string;
+  improvementNotationOther?: string;
+}
+
 export type RiskAdjustment = SupplementalData;
 
 export interface ManifestExpansion {
@@ -151,4 +157,5 @@ export interface Measure {
   improvementNotation?: string;
   improvementNotationOther?: string;
   testCaseConfiguration?: TestCaseConfiguration;
+  reporting?: Reporting;
 }
