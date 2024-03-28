@@ -102,7 +102,7 @@ export interface SupplementalData {
 export interface Reporting {
   rateAggregation?: string;
   improvementNotation?: string;
-  improvementNotationOther?: string;
+  improvementNotationDescription?: string;
 }
 
 export type RiskAdjustment = SupplementalData;
