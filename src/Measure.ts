@@ -149,6 +149,6 @@ export interface Measure {
   rateAggregation?: string;
   measureSet?: MeasureSet;
   improvementNotation?: string;
-  improvementNotationOther?: string;
+  improvementNotationDescription?: string;
   testCaseConfiguration?: TestCaseConfiguration;
 }
