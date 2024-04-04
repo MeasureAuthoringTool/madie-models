@@ -5,6 +5,7 @@ export interface TestCaseExcelExportDto {
 }
 
 export interface TestCaseExecutionResultDto {
+  testCaseId: string;
   populations: Array<PopulationDto>;
   notes?: string;
   last: string;
@@ -17,12 +18,14 @@ export interface TestCaseExecutionResultDto {
   gender?: string;
   definitions: Array<DefinitionDto>;
   functions: Array<FunctionDto>;
+  stratifications?: Array<GroupedStratificationDto>;
 }
 
 export interface PopulationDto {
   name: string;
   expected: number;
   actual: number;
+  pass: boolean;
 }
 
 export interface DefinitionDto {
@@ -33,4 +36,19 @@ export interface DefinitionDto {
 export interface FunctionDto {
   logic: string;
   actual: string;
+}
+
+export interface StratificationDto {
+  id: string;
+  name: string;
+  expected: number;
+  actual: number;
+  pass: boolean;
+}
+
+export interface GroupedStratificationDto {
+  testCaseId: string;
+  stratId: string;
+  stratName: string;
+  stratificationDtos: StratificationDto[];
 }
