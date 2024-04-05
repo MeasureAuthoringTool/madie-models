@@ -115,7 +115,6 @@ export interface TestCaseConfiguration {
 export interface Measure {
   id: string;
   versionId: string;
-  cmsId?: string;
   active: boolean;
   measureHumanReadableId: string;
   measureSetId: string;
