@@ -11,7 +11,6 @@ test("Verifies that Measure has the correct attributes", () => {
   const measure: Measure = {
     id: "test",
     versionId: "testVersionId",
-    cmsId: "testCmsId",
     active: true,
     measureHumanReadableId: "testReadable",
     measureSetId: "1",
@@ -32,11 +31,13 @@ test("Verifies that Measure has the correct attributes", () => {
     measurementPeriodStart: new Date("12/31/2022"),
     testCases: [testCase],
     baseConfigurationTypes: [],
+    measureSet: { id: "1", cmsId: 22, measureSetId: "1", owner: "john doe"}
   };
 
   expect(measure.id).toEqual("test");
   expect(measure.cqlErrors).toBeTruthy();
   expect(measure.testCases?.length).toEqual(1);
+  expect(measure.measureSet?.cmsId).toEqual(22);
   if (measure.testCases) {
     expect(measure.testCases[0].title).toEqual(testCase.title);
     expect(measure.testCases[0].series).toEqual(testCase.series);
