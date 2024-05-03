@@ -6,6 +6,25 @@ import { AggregateFunctionType } from "./AggregateFunctionType";
 import { Organization } from "./Organization";
 import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 
+export type Code = {
+  name: string;
+  display: string;
+  version: string;
+  codeSystem: string;
+  codeSystemOid: string;
+  status: string;
+}
+export type CodeSystemVersion = { 
+    name: string;
+    display: string;
+    version: string;
+    codeSystem: string;
+    codeSystemOid: string;
+    status: string;
+}
+export type CqlMetaData = {
+    codeSystemMap: Map<string, CodeSystemVersion>;
+}
 export interface MeasureMetadata {
   steward?: Organization;
   developers?: Array<Organization>;
@@ -24,6 +43,7 @@ export interface MeasureMetadata {
   transmissionFormat?: string;
   supplementalDataElements?: string;
   measureSetTitle?: string;
+  cqlMetaData?: CqlMetaData;
 }
 
 export interface Reference {
