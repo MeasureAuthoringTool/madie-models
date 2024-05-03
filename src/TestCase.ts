@@ -13,6 +13,7 @@ export interface TestCase {
   json?: string;
   executionStatus: string;
   groupPopulations: GroupPopulation[];
+  validResource: boolean;
   hapiOperationOutcome: HapiOperationOutcome;
 }
 
@@ -21,35 +22,48 @@ export interface GroupPopulation {
   scoring: string;
   populationBasis: string;
   populationValues: PopulationExpectedValue[];
-  stratificationValues: PopulationExpectedValue[];
+  stratificationValues: StratificationExpectedValue[];
 }
 
 export interface PopulationExpectedValue {
   id: string;
   criteriaReference?: string;
-  name: PopulationType | string;
+  name: PopulationType;
   expected: boolean | number;
-  actual?:boolean | number;  
+  actual?: boolean | number;
 }
 
+export interface StratificationExpectedValue {
+  id: string;
+  criteriaReference?: string;
+  name: string;
+  expected: boolean | number;
+  actual?: boolean | number;
+}
 
 export interface DisplayGroupPopulation {
   groupId: string;
   scoring: string;
   populationBasis: string;
   populationValues: DisplayPopulationValue[];
-  stratificationValues: DisplayPopulationValue[];
+  stratificationValues: DisplayStratificationValue[];
 }
 
-
 export interface DisplayPopulationValue {
-  name: PopulationType | string;
+  name: PopulationType;
   actual?: boolean | number;
   id: string;
   criteriaReference?: string;
   expected: boolean | number;
 }
 
+export interface DisplayStratificationValue {
+  name: string;
+  actual?: boolean | number;
+  id: string;
+  criteriaReference?: string;
+  expected: boolean | number;
+}
 
 export interface HapiOperationOutcome {
   code: number;

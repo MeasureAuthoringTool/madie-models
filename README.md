@@ -19,3 +19,5 @@ In the package.json, for the app you are integrating with, replace
 `"@madie/madie-models": "^0.0.5",`
 with
 `"@madie/madie-models": "../madie-models/dist",`
+
+Version 1.3.1
