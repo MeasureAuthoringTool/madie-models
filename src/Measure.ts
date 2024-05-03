@@ -14,7 +14,7 @@ export type Code = {
   codeSystemOid: string;
   status: string;
 }
-export type CodeSystemVersion = { 
+export type CodeSystem = { 
     name: string;
     display: string;
     version: string;
@@ -23,7 +23,7 @@ export type CodeSystemVersion = {
     status: string;
 }
 export type CqlMetaData = {
-    codeSystemMap: Map<string, CodeSystemVersion>;
+    codeSystemMap: Map<string, CodeSystem>;
 }
 export interface MeasureMetadata {
   steward?: Organization;
