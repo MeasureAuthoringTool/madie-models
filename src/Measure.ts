@@ -9,7 +9,8 @@ import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 export type Code = {
   name: string;
   display: string;
-  version: string;
+  svsVersion: string;
+  fhirVersion: string;
   codeSystem: string;
   codeSystemOid: string;
   status: string;
@@ -17,7 +18,8 @@ export type Code = {
 export type CodeSystem = { 
     name: string;
     display: string;
-    version: string;
+    svsVersion: string;
+    fhirVersion: string;
     codeSystem: string;
     codeSystemOid: string;
     status: string;
