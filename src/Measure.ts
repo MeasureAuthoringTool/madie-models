@@ -9,22 +9,24 @@ import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 export type Code = {
   name: string;
   display: string;
-  version: string;
+  svsVersion: string;
+  fhirVersion: string;
   codeSystem: string;
   codeSystemOid: string;
   status: string;
-}
-export type CodeSystem = { 
-    name: string;
-    display: string;
-    version: string;
-    codeSystem: string;
-    codeSystemOid: string;
-    status: string;
-}
+};
+export type CodeSystem = {
+  name: string;
+  display: string;
+  svsVersion: string;
+  fhirVersion: string;
+  codeSystem: string;
+  codeSystemOid: string;
+  status: string;
+};
 export type CqlMetaData = {
-    codeSystemMap: Map<string, CodeSystem>;
-}
+  codeSystemMap: Map<string, CodeSystem>;
+};
 export interface MeasureMetadata {
   steward?: Organization;
   developers?: Array<Organization>;

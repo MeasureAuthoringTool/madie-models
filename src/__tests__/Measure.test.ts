@@ -31,7 +31,7 @@ test("Verifies that Measure has the correct attributes", () => {
     measurementPeriodStart: new Date("12/31/2022"),
     testCases: [testCase],
     baseConfigurationTypes: [],
-    measureSet: { id: "1", cmsId: 22, measureSetId: "1", owner: "john doe"}
+    measureSet: { id: "1", cmsId: 22, measureSetId: "1", owner: "john doe" },
   };
 
   expect(measure.id).toEqual("test");
