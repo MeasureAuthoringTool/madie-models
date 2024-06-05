@@ -90,6 +90,15 @@ export interface HapiIssue {
 export interface TestCaseImportRequest {
   patientId: string;
   json: string;
+  testCaseMetaData: TestCaseExportMetaData;
+}
+
+export interface TestCaseExportMetaData {
+  testCaseId: string;
+  patientId: string;
+  title: string;
+  series: string;
+  description: string;
 }
 
 export interface TestCaseImportOutcome {
