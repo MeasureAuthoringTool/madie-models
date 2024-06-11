@@ -97,8 +97,8 @@ export interface TestCaseExportMetaData {
   testCaseId: string;
   patientId: string;
   title: string;
-  series: string;
-  description: string;
+  series?: string;
+  description?: string;
 }
 
 export interface TestCaseImportOutcome {
