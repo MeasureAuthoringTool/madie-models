@@ -14,6 +14,7 @@ export type Code = {
   codeSystem: string;
   codeSystemOid: string;
   status: string;
+  isVersionIncluded: boolean;
 }
 export type CodeSystem = { 
     name: string;
