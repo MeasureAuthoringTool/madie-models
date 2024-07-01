@@ -14,7 +14,7 @@ export type Code = {
   codeSystem: string;
   codeSystemOid: string;
   status: string;
-  isVersionIncluded: boolean;
+  versionIncluded: boolean;
   suffix?: string;
 }
 export type CodeSystem = { 
