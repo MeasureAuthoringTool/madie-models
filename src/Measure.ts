@@ -41,11 +41,9 @@ export interface MeasureMetadata {
   draft?: boolean;
   references?: Array<Reference>;
   endorsements?: Array<Endorsement>;
-  riskAdjustment?: string;
   definition?: string;
   experimental?: boolean;
   transmissionFormat?: string;
-  supplementalDataElements?: string;
   measureSetTitle?: string;
   cqlMetaData?: CqlMetaData;
 }
