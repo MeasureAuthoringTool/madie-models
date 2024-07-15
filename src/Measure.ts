@@ -118,9 +118,17 @@ export enum MeasureErrorType {
   MISMATCH_CQL_SUPPLEMENTAL_DATA = "MISMATCH_CQL_SUPPLEMENTAL_DATA",
 }
 
+export enum MeasureReportType {
+  INDIVIDUAL = "Individual",
+  SUBJECT_LIST = "Subject List",
+  SUMMARY = "Summary",
+  DATA_COLLECTION = "Data Collection",
+}
+
 export interface SupplementalData {
   definition: string;
   description?: string;
+  includeInReportType?: MeasureReportType[];
 }
 
 export type RiskAdjustment = SupplementalData;
