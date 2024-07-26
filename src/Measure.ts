@@ -17,7 +17,7 @@ export type Code = {
   versionIncluded: boolean;
   suffix?: string;
 }
-export type CodeSystem = { 
+export type CodeSystem = {
     name: string;
     display: string;
     svsVersion: string;
@@ -71,6 +71,7 @@ export interface Stratification {
   description?: string;
   cqlDefinition?: string;
   association?: PopulationType;
+  associations?: PopulationType[];
 }
 
 export interface MeasureObservation {
