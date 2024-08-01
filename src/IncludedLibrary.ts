@@ -1,4 +1,4 @@
-export interface IncludedLibrary {
+export default interface IncludedLibrary {
   name: string;
   version: string;
 }

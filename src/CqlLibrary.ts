@@ -1,6 +1,6 @@
 import { Model } from "./Model";
 import { Acl } from "./Measure";
-import {IncludedLibrary} from "./IncludedLibrary";
+import IncludedLibrary from "./IncludedLibrary";
 
 export interface LibrarySet {
   id: string;

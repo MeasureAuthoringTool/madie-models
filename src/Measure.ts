@@ -5,7 +5,7 @@ import { MeasureGroupTypes } from "./MeasureGroupTypes";
 import { AggregateFunctionType } from "./AggregateFunctionType";
 import { Organization } from "./Organization";
 import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
-import {IncludedLibrary} from "./IncludedLibrary";
+import IncludedLibrary from "./IncludedLibrary";
 
 export type Code = {
   name: string;
