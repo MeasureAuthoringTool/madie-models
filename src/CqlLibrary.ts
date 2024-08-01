@@ -1,5 +1,6 @@
 import { Model } from "./Model";
 import { Acl } from "./Measure";
+import {IncludedLibrary} from "./IncludedLibrary";
 
 export interface LibrarySet {
   id: string;
@@ -17,6 +18,7 @@ export interface CqlLibrary {
   cql: string;
   version: string;
   draft: boolean;
+  active: boolean;
   createdAt: string;
   createdBy: string;
   lastModifiedAt: string;
@@ -25,4 +27,5 @@ export interface CqlLibrary {
   description?: string;
   experimental?: boolean;
   librarySet?: LibrarySet;
+  includedLibraries?: Array<IncludedLibrary>;
 }
