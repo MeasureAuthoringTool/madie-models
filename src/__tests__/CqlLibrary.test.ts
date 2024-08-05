@@ -11,6 +11,7 @@ test("Verifies that Cql Library has the correct attributes", () => {
     cql: "random string of cql code",
     version: "1",
     draft: false,
+    active: true,
     createdAt: "",
     createdBy: "",
     lastModifiedAt: "",
