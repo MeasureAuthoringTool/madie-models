@@ -5,7 +5,7 @@ export enum BaseConfigurationTypes {
   INTERMEDIATE_OUTCOME = "Intermediate Outcome",
   OUTCOME = "Outcome",
   EXPERIENCE = "Experience",
-  PATIENT_REPORTED_OUTCOME_PERFORMANCE = "Patient Reported Outcome",
+  PATIENT_REPORTED_OUTCOME = "Patient Reported Outcome",
   PROCESS = "Process",
   STRUCTURE = "Structure",
 }
