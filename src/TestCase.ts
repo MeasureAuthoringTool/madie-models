@@ -65,7 +65,7 @@ export interface DisplayStratificationValue {
   id: string;
   criteriaReference?: string;
   expected: boolean | number;
-  populationValues: DisplayPopulationValue[];
+  populationValues?: DisplayPopulationValue[];
 }
 
 export interface HapiOperationOutcome {
