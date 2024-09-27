@@ -16,6 +16,7 @@ export interface TestCase {
   validResource: boolean;
   hapiOperationOutcome: HapiOperationOutcome;
   patientId: string;
+  caseNumber?: number;
 }
 
 export interface GroupPopulation {
