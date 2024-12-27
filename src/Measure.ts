@@ -14,6 +14,7 @@ export type Code = {
   fhirVersion: string;
   codeSystem: string;
   codeSystemOid: string;
+  codeSystemUrl: string;
   status: string;
   versionIncluded: boolean;
   suffix?: string;
