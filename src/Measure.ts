@@ -163,7 +163,7 @@ export interface Measure {
   createdBy: string;
   lastModifiedAt: string;
   lastModifiedBy: string;
-  model: Model | "";
+  model: Model;
   measureMetaData?: MeasureMetadata;
   measurementPeriodStart: Date;
   measurementPeriodEnd: Date;
