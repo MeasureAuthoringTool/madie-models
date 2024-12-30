@@ -14,6 +14,7 @@ export type Code = {
   fhirVersion: string;
   codeSystem: string;
   codeSystemOid: string;
+  codeSystemUrl: string;
   status: string;
   versionIncluded: boolean;
   suffix?: string;
@@ -163,7 +164,7 @@ export interface Measure {
   createdBy: string;
   lastModifiedAt: string;
   lastModifiedBy: string;
-  model: Model | "";
+  model: Model;
   measureMetaData?: MeasureMetadata;
   measurementPeriodStart: Date;
   measurementPeriodEnd: Date;
