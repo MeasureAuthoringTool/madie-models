@@ -31,6 +31,13 @@ export type CodeSystem = {
 export type CqlMetaData = {
     codeSystemMap: Map<string, CodeSystem>;
 }
+
+export type CodeConcept = {
+  code: string;
+  codeSystem: string;
+  display: string;
+  definition: string;
+}
 export interface MeasureMetadata {
   steward?: Organization;
   developers?: Array<Organization>;
@@ -48,6 +55,7 @@ export interface MeasureMetadata {
   transmissionFormat?: string;
   measureSetTitle?: string;
   cqlMetaData?: CqlMetaData;
+  intendedVenue?: CodeConcept
 }
 
 export interface Reference {
