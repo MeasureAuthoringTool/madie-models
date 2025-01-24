@@ -105,6 +105,7 @@ export interface Group {
   stratifications?: Stratification[];
   measureGroupTypes: MeasureGroupTypes[];
   populationBasis?: string;
+  scoringPrecision?: string;
 }
 
 export interface Acl {
