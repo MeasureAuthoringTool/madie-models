@@ -18,26 +18,26 @@ export type Code = {
   status: string;
   versionIncluded: boolean;
   suffix?: string;
-}
+};
 export type CodeSystem = {
-    name: string;
-    display: string;
-    svsVersion: string;
-    fhirVersion: string;
-    codeSystem: string;
-    codeSystemOid: string;
-    status: string;
-}
+  name: string;
+  display: string;
+  svsVersion: string;
+  fhirVersion: string;
+  codeSystem: string;
+  codeSystemOid: string;
+  status: string;
+};
 export type CqlMetaData = {
-    codeSystemMap: Map<string, CodeSystem>;
-}
+  codeSystemMap: Map<string, CodeSystem>;
+};
 
 export type CodeConcept = {
   code: string;
   codeSystem: string;
   display: string;
   definition: string;
-}
+};
 export interface MeasureMetadata {
   steward?: Organization;
   developers?: Array<Organization>;
@@ -55,7 +55,7 @@ export interface MeasureMetadata {
   transmissionFormat?: string;
   measureSetTitle?: string;
   cqlMetaData?: CqlMetaData;
-  intendedVenue?: CodeConcept
+  intendedVenue?: CodeConcept;
 }
 
 export interface Reference {
@@ -155,6 +155,12 @@ export interface TestCaseConfiguration {
   manifestExpansion?: ManifestExpansion;
 }
 
+export interface MeasureDefinition {
+  id: string;
+  term: string;
+  definition: string;
+}
+
 export interface Measure {
   id: string;
   versionId: string;
@@ -194,4 +200,5 @@ export interface Measure {
   improvementNotationDescription?: string;
   testCaseConfiguration?: TestCaseConfiguration;
   includedLibraries?: Array<IncludedLibrary>;
+  measureDefinitions?: Array<MeasureDefinition>;
 }
