@@ -45,6 +45,7 @@ export interface MeasureMetadata {
   copyright?: string;
   disclaimer?: string;
   rationale?: string;
+  purpose?: string;
   guidance?: string;
   clinicalRecommendation?: string;
   draft?: boolean;
