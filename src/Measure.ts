@@ -107,6 +107,7 @@ export interface Group {
   measureGroupTypes: MeasureGroupTypes[];
   populationBasis?: string;
   scoringPrecision?: string;
+  displayId?: string;
 }
 
 export interface Acl {
