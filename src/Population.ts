@@ -19,4 +19,5 @@ export interface Population {
   definition?: string;
   associationType?: string;
   description?: string;
+  displayId?: string;
 }
