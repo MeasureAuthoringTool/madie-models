@@ -83,6 +83,7 @@ export interface Stratification {
   cqlDefinition?: string;
   association?: PopulationType;
   associations?: PopulationType[];
+  displayId?: string;
 }
 
 export interface MeasureObservation {
@@ -91,6 +92,7 @@ export interface MeasureObservation {
   description?: string;
   criteriaReference?: string;
   aggregateMethod?: AggregateFunctionType;
+  displayId?: string;
 }
 
 export interface Group {
