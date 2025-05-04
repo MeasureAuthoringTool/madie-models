@@ -10,3 +10,4 @@ export * from "./AggregateFunctionType";
 export * from "./Organization";
 export * from "./BaseConfigurationTypes";
 export * from "./TestCaseExcelExportDto";
+export * from "./OverlappingCodeDto";
