@@ -15,6 +15,7 @@ export interface TestCase {
   groupPopulations: GroupPopulation[];
   validResource: boolean;
   hapiOperationOutcome: HapiOperationOutcome;
+  testCaseValidationStatus: TestCaseValidationStatus;
   patientId: string;
   caseNumber?: number;
 }
@@ -109,4 +110,13 @@ export interface TestCaseImportOutcome {
   patientId: string;
   message: string;
   successful: boolean;
+}
+
+export enum TestCaseValidationStatus {
+  PENDING = "Pending",
+  VALIDATING = "Validating",
+  VALID = "Valid",
+  INVALID = "Invalid",
+  INVALID_JSON = "Invalid JSON",
+  NOT_COMPLETE = "Not Complete",
 }
