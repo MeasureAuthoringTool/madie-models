@@ -156,6 +156,7 @@ export interface ManifestExpansion {
 export interface TestCaseConfiguration {
   id?: string;
   sdeIncluded?: boolean;
+  ravIncluded?: boolean;
   manifestExpansion?: ManifestExpansion;
 }
 
