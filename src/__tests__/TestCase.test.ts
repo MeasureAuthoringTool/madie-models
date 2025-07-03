@@ -1,4 +1,4 @@
-import {HapiOperationOutcome, TestCase, TestCaseValidationStatus} from "../TestCase";
+import { HapiOperationOutcome, TestCase, ValidationStatus } from "../TestCase";
 
 describe("TestCase Model", () => {
   it("should be able to create test case and populate fields", () => {
@@ -17,7 +17,7 @@ describe("TestCase Model", () => {
       groupPopulations: [],
       validResource: false,
       hapiOperationOutcome: {} as HapiOperationOutcome,
-      testCaseValidationStatus: TestCaseValidationStatus.VALID,
+      validationStatus: ValidationStatus.VALID,
       patientId: "test patient id",
     } as TestCase;
 
