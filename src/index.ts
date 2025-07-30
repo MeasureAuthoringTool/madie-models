@@ -11,4 +11,4 @@ export * from "./Organization";
 export * from "./BaseConfigurationTypes";
 export * from "./TestCaseExcelExportDto";
 export * from "./OverlappingCodeDto";
-export * from "./ViewScope";
+export * from "./OwnershipType";
