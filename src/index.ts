@@ -12,3 +12,4 @@ export * from "./BaseConfigurationTypes";
 export * from "./TestCaseExcelExportDto";
 export * from "./OverlappingCodeDto";
 export * from "./OwnershipType";
+export * from "./MeasureSearchCriteria"
