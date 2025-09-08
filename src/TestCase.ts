@@ -18,6 +18,7 @@ export interface TestCase {
   validationStatus: ValidationStatus;
   patientId: string;
   caseNumber?: number;
+  createdBeforeVersioning: boolean;
 }
 
 export interface GroupPopulation {
