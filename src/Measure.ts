@@ -166,6 +166,13 @@ export interface MeasureDefinition {
   definition: string;
 }
 
+export interface MeasureLock {
+    id: string;
+    measureId: string;
+    lockedBy: string;
+    lockedAt: string;
+}
+
 export interface Measure {
   id: string;
   versionId: string;
@@ -206,4 +213,6 @@ export interface Measure {
   testCaseConfiguration?: TestCaseConfiguration;
   includedLibraries?: Array<IncludedLibrary>;
   measureDefinitions?: Array<MeasureDefinition>;
+  measureLock?: MeasureLock;
+  hasLockedTestCases?: boolean;
 }
