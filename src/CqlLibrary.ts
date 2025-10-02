@@ -10,10 +10,10 @@ export interface LibrarySet {
 }
 
 export interface CqlLibraryLock {
-    cqlLibraryId: string;
-    lockedBy: string;
-    lockedAt: string;
-    expiresAt: string;
+  cqlLibraryId: string;
+  lockedBy: string;
+  lockedAt: string;
+  expiresAt: string;
 }
 
 export interface CqlLibrary {
