@@ -13,3 +13,4 @@ export * from "./TestCaseExcelExportDto";
 export * from "./OverlappingCodeDto";
 export * from "./OwnershipType";
 export * from "./MeasureSearchCriteria"
+export * from "./MeasureHistoryActions";
