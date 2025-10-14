@@ -9,6 +9,13 @@ export interface LibrarySet {
   acls?: Array<Acl>;
 }
 
+export interface CqlLibraryLock {
+  cqlLibraryId: string;
+  lockedBy: string;
+  lockedAt: string;
+  expiresAt: string;
+}
+
 export interface CqlLibrary {
   id: string;
   cqlLibraryName: string;
@@ -28,4 +35,5 @@ export interface CqlLibrary {
   experimental?: boolean;
   librarySet?: LibrarySet;
   includedLibraries?: Array<IncludedLibrary>;
+  cqlLibraryLock?: CqlLibraryLock;
 }
