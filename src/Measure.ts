@@ -158,6 +158,7 @@ export interface TestCaseConfiguration {
   sdeIncluded?: boolean;
   ravIncluded?: boolean;
   manifestExpansion?: ManifestExpansion;
+  executeInvalidTestCases?: boolean;
 }
 
 export interface MeasureDefinition {
