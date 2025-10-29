@@ -1,5 +1,13 @@
 import { PopulationType } from "./Population";
 
+export interface TestCaseLockInfo {
+  measureId: string;
+  testCaseId: string;
+  lockedBy: string;
+  lockedAt: string;
+  expiresAt: string;
+}
+
 export interface TestCase {
   id: string;
   title: string;
@@ -19,6 +27,7 @@ export interface TestCase {
   patientId: string;
   caseNumber?: number;
   createdBeforeVersioning: boolean;
+  testCaseLock?: TestCaseLockInfo;
 }
 
 export interface GroupPopulation {
