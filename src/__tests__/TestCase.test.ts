@@ -19,7 +19,7 @@ describe("TestCase Model", () => {
       hapiOperationOutcome: {} as HapiOperationOutcome,
       validationStatus: ValidationStatus.VALID,
       patientId: "test patient id",
-      createdBeforeVersioning: true
+      createdBeforeVersioning: true,
     } as TestCase;
 
     expect(testCase.id).toEqual("abc-pqr");

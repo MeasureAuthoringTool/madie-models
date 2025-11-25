@@ -168,10 +168,10 @@ export interface MeasureDefinition {
 }
 
 export interface MeasureLock {
-    id: string;
-    measureId: string;
-    lockedBy: string;
-    lockedAt: string;
+  id: string;
+  measureId: string;
+  lockedBy: string;
+  lockedAt: string;
 }
 
 export interface Measure {

@@ -28,7 +28,7 @@ export interface TestCase {
   caseNumber?: number;
   createdBeforeVersioning: boolean;
   testCaseLock?: TestCaseLockInfo;
-    isBundleTypeUpdated?: boolean;
+  isBundleTypeUpdated?: boolean;
 }
 
 export interface GroupPopulation {
