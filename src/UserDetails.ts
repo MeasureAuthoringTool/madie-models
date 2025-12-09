@@ -1,5 +1,5 @@
 export interface UserDetails {
-  harpid?: string;
+  harpId?: string;
   firstName?: string;
   lastName?: string;
   email?: string;

@@ -1,6 +1,6 @@
 {
   "name": "@madie/madie-models",
-  "version": "1.4.50",
+  "version": "1.4.51",
   "description": "Models for MADiE Project",
   "scripts": {
     "build": "tsc",
