@@ -151,6 +151,7 @@ export type RiskAdjustment = SupplementalData;
 export interface ManifestExpansion {
   fullUrl: string;
   id: string;
+  title?: string;
 }
 
 export interface TestCaseConfiguration {
