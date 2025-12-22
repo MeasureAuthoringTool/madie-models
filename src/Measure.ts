@@ -57,6 +57,7 @@ export interface MeasureMetadata {
   measureSetTitle?: string;
   cqlMetaData?: CqlMetaData;
   intendedVenue?: CodeConcept;
+  composite?: boolean;
 }
 
 export interface Reference {
