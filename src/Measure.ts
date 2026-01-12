@@ -111,6 +111,7 @@ export interface Group {
   populationBasis?: string;
   scoringPrecision?: string;
   displayId?: string;
+  compositeScoring?:string;
 }
 
 export interface Acl {
