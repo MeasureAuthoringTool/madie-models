@@ -4,4 +4,6 @@ export interface MeasureSearchCriteria {
   model?: string;
   draft?: boolean;
   excludeByMeasureIds?: string[];
+  fromCompositeMeasureComponent?: boolean;
+  allowedScoringTypes?: string[];
 }
