@@ -96,6 +96,12 @@ export interface MeasureObservation {
   displayId?: string;
 }
 
+export interface Component {
+  measureId: string;
+  groupId: string;
+  weight: number;
+}
+
 export interface Group {
   id: string;
   scoring?: string;
@@ -112,6 +118,7 @@ export interface Group {
   scoringPrecision?: string;
   displayId?: string;
   compositeScoring?:string;
+  components?: Component[];
 }
 
 export interface Acl {
