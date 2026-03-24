@@ -3,6 +3,7 @@ export interface UserDetails {
   firstName?: string;
   lastName?: string;
   email?: string;
+  active?: boolean;
 }
 
 export enum UserStatus {
