@@ -9,7 +9,7 @@ export interface UserDetails {
 export enum UserStatus {
   ACTIVE,
   DEACTIVATED,
-  ERROR_SUSPENDED
+  ERROR_SUSPENDED,
 }
 
 export interface HarpRole {

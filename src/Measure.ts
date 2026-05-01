@@ -117,7 +117,7 @@ export interface Group {
   populationBasis?: string;
   scoringPrecision?: string;
   displayId?: string;
-  compositeScoring?:string;
+  compositeScoring?: string;
   components?: Component[];
 }
 
