@@ -10,3 +10,4 @@ export * from "./AggregateFunctionType";
 export * from "./Organization";
 export * from "./ProgramUseContext";
 export * from "./BaseConfigurationTypes";
+export * from "./MadieUser";
