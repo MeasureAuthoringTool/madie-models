@@ -1,9 +1,12 @@
 export interface UserDetails {
+  id?: string;
   harpId?: string;
   firstName?: string;
   lastName?: string;
   email?: string;
   userStatus?: UserStatus;
+  roles?: HarpRole[];
+  lastLoginAt?: string;
 }
 
 export enum UserStatus {
