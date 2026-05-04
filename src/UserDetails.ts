@@ -25,8 +25,3 @@ export interface UserLogin {
   status?: UserStatus;
   roles: HarpRole[];
 }
-
-export interface UserLogin {
-  harpId?: string;
-  roles?: Array<{ role: string }>;
-}

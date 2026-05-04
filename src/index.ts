@@ -15,4 +15,3 @@ export * from "./OwnershipType";
 export * from "./MeasureSearchCriteria";
 export * from "./MeasureHistoryActions";
 export * from "./UserDetails";
-export * from "./MadieUser";
