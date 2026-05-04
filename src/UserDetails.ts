@@ -4,15 +4,15 @@ export interface UserDetails {
   firstName?: string;
   lastName?: string;
   email?: string;
-  userStatus?: UserStatus;
+  status?: UserStatus;
   roles?: HarpRole[];
   lastLoginAt?: string;
 }
 
 export enum UserStatus {
-  ACTIVE,
-  DEACTIVATED,
-  ERROR_SUSPENDED,
+  ACTIVE = "ACTIVE",
+  DEACTIVATED = "DEACTIVATED",
+  ERROR_SUSPENDED = "ERROR_SUSPENDED",
 }
 
 export interface HarpRole {
