@@ -226,4 +226,5 @@ export interface Measure {
   measureDefinitions?: Array<MeasureDefinition>;
   measureLock?: MeasureLock;
   hasLockedTestCases?: boolean;
+  ownerDisplayName?: string;
 }
