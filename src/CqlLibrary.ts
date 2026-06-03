@@ -36,4 +36,5 @@ export interface CqlLibrary {
   librarySet?: LibrarySet;
   includedLibraries?: Array<IncludedLibrary>;
   cqlLibraryLock?: CqlLibraryLock;
+  ownerDisplayName?: string;
 }
