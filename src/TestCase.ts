@@ -8,19 +8,6 @@ export interface TestCaseLockInfo {
   expiresAt: string;
 }
 
-export interface ComponentProfile {
-  measureName: string;
-  measureVersion: string;
-  measureId: string;
-  testCaseGroup: string;
-  testCaseTitle: string;
-  testCaseDescription: string;
-  testCaseId: string;
-  testCaseSetId: string;
-  originalProfileId: string;
-  newProfileId: string;
-}
-
 export interface TestCase {
   id: string;
   title: string;
@@ -42,7 +29,6 @@ export interface TestCase {
   createdBeforeVersioning: boolean;
   testCaseLock?: TestCaseLockInfo;
   bundleTypeUpdated?: boolean;
-  componentProfiles?: ComponentProfile[];
 }
 
 export interface GroupPopulation {
