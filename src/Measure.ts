@@ -6,6 +6,7 @@ import { AggregateFunctionType } from "./AggregateFunctionType";
 import { Organization } from "./Organization";
 import { BaseConfigurationTypes } from "./BaseConfigurationTypes";
 import IncludedLibrary from "./IncludedLibrary";
+import { Review } from "./Review";
 
 export type Code = {
   name: string;
@@ -227,4 +228,5 @@ export interface Measure {
   measureLock?: MeasureLock;
   hasLockedTestCases?: boolean;
   ownerDisplayName?: string;
+  review?: Review;
 }
