@@ -16,3 +16,5 @@ export * from "./MeasureSearchCriteria";
 export * from "./MeasureHistoryActions";
 export * from "./UserDetails";
 export * from "./Review";
+export * from "./CqlLibraryReview";
+export * from "./MeasureReview";
