@@ -12,7 +12,7 @@ Create a PR for merge to main with a Title of "Release x.y.z" and the npm-publis
 
 To enable local development:
 
-- npm install 
+- npm install
 - npm run build
 
 In the package.json, for the app you are integrating with, replace
