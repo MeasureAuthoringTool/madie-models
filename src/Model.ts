@@ -46,11 +46,11 @@ export function isFhirModel(model: string | undefined | null): boolean {
 }
 
 /**
- * Returns the model family used in export artifact names: "FHIR" for QI-Core
- * models, otherwise the first word of the model name (e.g. "QDM").
+ * Returns the model family used in export artifact names: "QDM" for QDM models,
+ * "FHIR" for every FHIR-based model (QI-Core, US-Core, US Quality Core).
  */
 export function getModelFamily(model: string): string | undefined {
   if (model) {
-    return model.startsWith("QI-Core") ? `FHIR` : `${model.split(" ")[0]}`;
+    return isFhirModel(model) ? "FHIR" : "QDM";
   }
 }
