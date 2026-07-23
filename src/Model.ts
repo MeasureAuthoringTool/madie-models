@@ -44,3 +44,13 @@ export function getModelShortName(model: string): string {
 export function isFhirModel(model: string | undefined | null): boolean {
   return Boolean(model) && model !== Model.QDM_5_6;
 }
+
+/**
+ * Returns the model family used in export artifact names: "QDM" for QDM models,
+ * "FHIR" for every FHIR-based model (QI-Core, US-Core, US Quality Core).
+ */
+export function getModelFamily(model: string): string | undefined {
+  if (model) {
+    return isFhirModel(model) ? "FHIR" : "QDM";
+  }
+}

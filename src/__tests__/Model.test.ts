@@ -1,4 +1,10 @@
-import { Model, MODEL_SHORT_NAMES, getModelShortName, isFhirModel } from "../Model";
+import {
+  Model,
+  MODEL_SHORT_NAMES,
+  getModelShortName,
+  isFhirModel,
+  getModelFamily,
+} from "../Model";
 
 test("Verifies that Model has the correct attributes", () => {
   expect(Model.QICORE.valueOf()).toEqual("QI-Core v4.1.1");
@@ -25,7 +31,9 @@ test("getModelShortName returns correct shortNames", () => {
 });
 
 test("getModelShortName throws for an unknown model string", () => {
-  expect(() => getModelShortName("Unknown Model v1.0")).toThrow("Unknown model");
+  expect(() => getModelShortName("Unknown Model v1.0")).toThrow(
+    "Unknown model"
+  );
 });
 
 test("isFhirModel returns true for all non-QDM models", () => {
@@ -41,4 +49,20 @@ test("isFhirModel returns false for QDM and empty/falsy values", () => {
   expect(isFhirModel(Model.QDM_5_6)).toBe(false);
   expect(isFhirModel("")).toBe(false);
   expect(isFhirModel(undefined)).toBe(false);
+});
+
+test("getModelFamily returns FHIR for every FHIR-based model", () => {
+  expect(getModelFamily(Model.QICORE)).toBe("FHIR");
+  expect(getModelFamily(Model.QICORE_6_0_0)).toBe("FHIR");
+  expect(getModelFamily(Model.FHIR_4_0_1)).toBe("FHIR");
+  expect(getModelFamily(Model.US_CORE_6_1_0)).toBe("FHIR");
+  expect(getModelFamily(Model.US_QUALITY_0_5_0)).toBe("FHIR");
+});
+
+test("getModelFamily returns QDM for QDM models", () => {
+  expect(getModelFamily(Model.QDM_5_6)).toBe("QDM");
+});
+
+test("getModelFamily returns undefined for empty model", () => {
+  expect(getModelFamily("")).toBeUndefined();
 });
