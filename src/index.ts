@@ -18,3 +18,4 @@ export * from "./UserDetails";
 export * from "./Review";
 export * from "./CqlLibraryReview";
 export * from "./MeasureReview";
+export * from "./LibraryListDTO";
