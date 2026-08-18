@@ -6,4 +6,5 @@ export interface MeasureReview {
   measureSetId: string;
   status: ReviewStatus;
   comment: string;
+  reviewers?: string[];
 }
