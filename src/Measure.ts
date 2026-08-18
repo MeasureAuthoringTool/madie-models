@@ -53,6 +53,7 @@ export interface MeasureMetadata {
   endorsements?: Array<Endorsement>;
   definition?: string;
   experimental?: boolean;
+  telehealthEligible?: boolean;
   transmissionFormat?: string;
   measureSetTitle?: string;
   cqlMetaData?: CqlMetaData;
