@@ -49,8 +49,8 @@ export interface TestCase {
   bundleTypeUpdated?: boolean;
   componentProfiles?: ComponentProfile[];
   compositeScore?: {
-    groupId: String;
-    displayId: String;
+    groupId: string;
+    displayId: string;
     compositeScore: Score;
     denominatorScore: Score;
     numeratorScore: Score;
