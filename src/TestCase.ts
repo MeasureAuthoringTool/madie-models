@@ -21,6 +21,11 @@ export interface ComponentProfile {
   newProfileId: string;
 }
 
+export interface Score {
+  expected?: number;
+  actual?: number;
+}
+
 export interface TestCase {
   id: string;
   title: string;
@@ -43,6 +48,13 @@ export interface TestCase {
   testCaseLock?: TestCaseLockInfo;
   bundleTypeUpdated?: boolean;
   componentProfiles?: ComponentProfile[];
+  compositeScore?: {
+    groupId: String;
+    displayId: String;
+    compositeScore: Score;
+    denominatorScore: Score;
+    numeratorScore: Score;
+  };
 }
 
 export interface GroupPopulation {
