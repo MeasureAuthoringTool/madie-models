@@ -228,4 +228,5 @@ export interface Measure {
   measureLock?: MeasureLock;
   hasLockedTestCases?: boolean;
   ownerDisplayName?: string;
+  translatorVersion?: string;
 }
