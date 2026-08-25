@@ -48,13 +48,6 @@ export interface TestCase {
   testCaseLock?: TestCaseLockInfo;
   bundleTypeUpdated?: boolean;
   componentProfiles?: ComponentProfile[];
-  compositeScore?: {
-    groupId: string;
-    displayId: string;
-    compositeScore: Score;
-    denominatorScore: Score;
-    numeratorScore: Score;
-  };
 }
 
 export interface GroupPopulation {
@@ -63,6 +56,14 @@ export interface GroupPopulation {
   populationBasis: string;
   populationValues: PopulationExpectedValue[];
   stratificationValues: StratificationExpectedValue[];
+  compositeScoreValues?: CompositeScoreExpectedValue;
+}
+
+export interface CompositeScoreExpectedValue {
+    displayId: String;
+    compositeScore: Score;
+    denominatorScore: Score;
+    numeratorScore: Score;
 }
 
 export interface PopulationExpectedValue {
