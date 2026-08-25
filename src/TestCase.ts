@@ -51,10 +51,10 @@ export interface Score {
 }
 
 export interface CompositeScoreExpectedValue {
-    displayId: String;
-    compositeScore: Score;
-    denominatorScore: Score;
-    numeratorScore: Score;
+  displayId: String;
+  compositeScore: Score;
+  denominatorScore: Score;
+  numeratorScore: Score;
 }
 
 export interface GroupPopulation {
