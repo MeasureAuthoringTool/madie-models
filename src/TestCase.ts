@@ -51,7 +51,7 @@ export interface Score {
 }
 
 export interface CompositeScoreExpectedValue {
-  displayId: String;
+  displayId: string;
   compositeScore: Score;
   denominatorScore: Score;
   numeratorScore: Score;
