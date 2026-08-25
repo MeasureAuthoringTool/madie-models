@@ -45,12 +45,25 @@ export interface TestCase {
   componentProfiles?: ComponentProfile[];
 }
 
+export interface Score {
+  expected?: number;
+  actual?: number;
+}
+
+export interface CompositeScoreExpectedValue {
+  displayId: string;
+  compositeScore: Score;
+  denominatorScore: Score;
+  numeratorScore: Score;
+}
+
 export interface GroupPopulation {
   groupId: string;
   scoring: string;
   populationBasis: string;
   populationValues: PopulationExpectedValue[];
   stratificationValues: StratificationExpectedValue[];
+  compositeScoreValues?: CompositeScoreExpectedValue;
 }
 
 export interface PopulationExpectedValue {
