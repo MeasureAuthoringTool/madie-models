@@ -14,5 +14,6 @@ export interface LibraryListDTO {
   draft: boolean;
   hasAssociatedLibraries: boolean;
   reviewStatus?: string;
+  reviewers?: string[];
   cqlLibraryLock?: CqlLibraryLock;
 }
