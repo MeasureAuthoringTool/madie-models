@@ -5,7 +5,7 @@ export interface Comment {
     createdAt?: string;
     authorName?: string;
     edited?: boolean;
-    read?: boolean;
+    readByUsers?: string[];
     content?: string;
     link?: string;
     replies?: Comment[];
