@@ -1,5 +1,5 @@
 import { ReviewStatus } from "./Review";
-import {Comment} from "./Comment";
+import { Comment } from "./Comment";
 
 export interface CqlLibraryReview {
   id: string;
