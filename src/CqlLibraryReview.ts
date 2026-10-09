@@ -8,4 +8,6 @@ export interface CqlLibraryReview {
   status: ReviewStatus;
   comment: Comment[];
   reviewers?: string[];
+  readyForReviewBy?: string;
+  readyForReviewAt?: string;
 }
