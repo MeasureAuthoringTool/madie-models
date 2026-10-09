@@ -1,5 +1,5 @@
 import { ReviewStatus } from "./Review";
-import {Comment} from "./Comment";
+import { Comment } from "./Comment";
 
 export interface CqlLibraryReview {
   id: string;
@@ -8,4 +8,6 @@ export interface CqlLibraryReview {
   status: ReviewStatus;
   comment: Comment[];
   reviewers?: string[];
+  readyForReviewBy?: string;
+  readyForReviewAt?: string;
 }
