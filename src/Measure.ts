@@ -49,6 +49,7 @@ export interface MeasureMetadata {
   guidance?: string;
   clinicalRecommendation?: string;
   limitations?: string;
+  trendingIssues?: string;
   authoritativeSource?: string;
   draft?: boolean;
   references?: Array<Reference>;
