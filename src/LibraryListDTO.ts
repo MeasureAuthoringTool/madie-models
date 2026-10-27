@@ -16,4 +16,6 @@ export interface LibraryListDTO {
   reviewStatus?: string;
   reviewers?: string[];
   cqlLibraryLock?: CqlLibraryLock;
+  externalLibrary: boolean;
+  externalVersion: string;
 }
