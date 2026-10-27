@@ -3,6 +3,7 @@ export interface Comment {
   mainSection?: string;
   subSection?: string;
   createdAt?: string;
+  harpId?: string;
   authorName?: string;
   edited?: boolean;
   readByUsers?: string[];
