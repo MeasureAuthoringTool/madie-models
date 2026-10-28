@@ -8,6 +8,6 @@ export interface MeasureReview {
   status: ReviewStatus;
   comment: Comment[];
   reviewers?: string[];
-  readyForReviewBy?: string;
-  readyForReviewAt?: string;
+  markedForReviewBy?: string;
+  markedForReviewAt?: string;
 }
