@@ -2,6 +2,7 @@ export interface Comment {
   id: string;
   mainSection?: string;
   subSection?: string;
+  subSectionId?: string;
   createdAt?: string;
   harpId?: string;
   authorName?: string;
