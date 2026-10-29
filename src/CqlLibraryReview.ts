@@ -6,7 +6,7 @@ export interface CqlLibraryReview {
   libraryId: string;
   librarySetId: string;
   status: ReviewStatus;
-  comment: Comment[];
+  comments: Comment[];
   reviewers?: string[];
   markedForReviewBy?: string;
   markedForReviewAt?: string;
