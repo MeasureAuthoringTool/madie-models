@@ -38,6 +38,14 @@ export type CodeConcept = {
   display: string;
   definition: string;
 };
+export interface ReportingTiming {
+  repeat: {
+    frequency: number;
+    period: number;
+    periodUnit: string;
+    timeOfDay?: string[];
+  };
+}
 export interface MeasureMetadata {
   steward?: Organization;
   developers?: Array<Organization>;
@@ -62,6 +70,7 @@ export interface MeasureMetadata {
   cqlMetaData?: CqlMetaData;
   intendedVenue?: CodeConcept;
   composite?: boolean;
+  reportingTiming?: ReportingTiming;
 }
 
 export interface Reference {
