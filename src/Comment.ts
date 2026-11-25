@@ -1,3 +1,8 @@
+export interface ReadStatus {
+  harpId: string;
+  readAt: string;
+}
+
 export interface Comment {
   id: string;
   mainSection?: string;
@@ -7,7 +12,7 @@ export interface Comment {
   harpId?: string;
   authorName?: string;
   edited?: boolean;
-  readByUsers?: string[];
+  readBy?: ReadStatus[];
   content?: string;
   link?: string;
   replies?: Comment[];
