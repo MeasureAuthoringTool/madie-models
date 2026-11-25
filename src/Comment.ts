@@ -1,4 +1,4 @@
-export interface ReadReceipt {
+export interface ReadStatus {
   harpId: string;
   readAt: string;
 }
@@ -12,7 +12,7 @@ export interface Comment {
   harpId?: string;
   authorName?: string;
   edited?: boolean;
-  readBy?: ReadReceipt[];
+  readBy?: ReadStatus[];
   content?: string;
   link?: string;
   replies?: Comment[];
